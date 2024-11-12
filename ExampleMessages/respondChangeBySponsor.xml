@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir https://hl7.org/fhir/fhir-single.xsd">
-  <id value="44930798-7856-4dbf-968d-58feb74c3b99" />
+  <id value="4a32a216-9f1c-4775-b4cf-f8d7415a3be6" />
   <type value="message" />
   <entry>
-    <fullUrl value="MessageHeader/31fb0e0a-ca8b-4554-bd4c-0f61004a89fb" />
+    <fullUrl value="MessageHeader/a25a651b-b469-43b6-af75-6f39e5283a3d" />
     <resource>
       <MessageHeader>
-        <id value="31fb0e0a-ca8b-4554-bd4c-0f61004a89fb" />
+        <id value="a25a651b-b469-43b6-af75-6f39e5283a3d" />
         <eventCoding>
           <display value="temp-string of VIB Demo Labeling" />
         </eventCoding>
         <destination>
           <receiver>
-            <reference value="Organization/PfizerId" />
+            <reference value="Organization/FDAID" />
           </receiver>
         </destination>
         <sender>
-          <reference value="Organization/FDAID" />
+          <reference value="Organization/PfizerId" />
         </sender>
         <source>
           <name value="VIB Demo" />
@@ -25,13 +25,13 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="Task/bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
+    <fullUrl value="Task/f744a143-fe5b-498c-87b1-bbd14956be48" />
     <resource>
       <Task>
-        <id value="bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
+        <id value="f744a143-fe5b-498c-87b1-bbd14956be48" />
         <identifier>
           <system value="http://example.com/system" />
-          <value value="bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
+          <value value="f744a143-fe5b-498c-87b1-bbd14956be48" />
         </identifier>
         <groupIdentifier>
           <system value="http://example.com/system" />
@@ -52,12 +52,16 @@
           </coding>
           <coding>
             <system value="TEMP-https://www.accessdata.fda.gov/eCTD" />
-            <code value="fdaat1" />
-            <display value="New Drug Application (NDA)" />
+            <code value="fdasst5" />
+            <display value="Resubmission" />
           </coding>
-          <text value="NDA Labeling Initial Submission from Pharmaceutical agent" />
+          <text value="NDA Labeling Original Resubmission" />
         </code>
-        <description value="Initial Submission: supplemental new drug application (sNDA) to add information to section XX and remove information from section YY" />
+        <description value="Please review the change made to: Supplemental new drug application (sNDA) to add information to section XX and remove information from section YY" />
+        <focus>
+			<!-- is this reference to the initial task, or to the last message received from the HA -->
+			<reference value="Task/bd675726-6ca7-4fce-8edb-6f29c0df2bcc"/>
+        </focus>
         <for>
           <reference value="Organization/PfizerId" />
         </for>
@@ -72,6 +76,21 @@
         <owner>
           <reference value="Organization/FDAID" />
         </owner>
+        <!-- not sure how we will code the reference to the last HA request in reason as it is a codeable concept type -->
+        <reason></reason>
+        <input>
+          <type>
+            <coding>
+              <system value="oid:2.16.840.1.113881.6.1" />
+              <code value="34391-3" />
+              <display value="HUMAN PRESCRIPTION DRUG LABEL" />
+            </coding>
+            <text value="Annotated HUMAN PRESCRIPTION DRUG LABEL" />
+          </type>
+          <valueReference>
+            <reference value="Bundle/2ab7db9e-5d14-431f-a3a3-a2da3d1047b2" />
+          </valueReference>
+        </input>
         <input>
           <type>
             <coding>
