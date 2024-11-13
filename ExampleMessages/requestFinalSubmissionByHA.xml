@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir https://hl7.org/fhir/fhir-single.xsd">
-  <id value="4a32a216-9f1c-4775-b4cf-f8d7415a3be6" />
+  <id value="135fac62-5c38-43a1-8269-6a5b651d6050" />
   <type value="message" />
   <entry>
-    <fullUrl value="MessageHeader/a25a651b-b469-43b6-af75-6f39e5283a3d" />
+    <fullUrl value="MessageHeader/066d3fc7-cfea-4ce1-9487-8ad101872ea5" />
     <resource>
       <MessageHeader>
-        <id value="a25a651b-b469-43b6-af75-6f39e5283a3d" />
+        <id value="066d3fc7-cfea-4ce1-9487-8ad101872ea5" />
         <eventCoding>
           <display value="temp-string of VIB Demo Labeling" />
         </eventCoding>
         <destination>
           <receiver>
-            <reference value="Organization/FDAID" />
+            <reference value="Organization/PfizerId" />
           </receiver>
         </destination>
         <sender>
-          <reference value="Organization/PfizerId" />
+          <reference value="Organization/FDAID" />
         </sender>
         <source>
           <name value="VIB Demo" />
@@ -25,13 +25,13 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="Task/f744a143-fe5b-498c-87b1-bbd14956be48" />
+    <fullUrl value="Task/6751b6c0-385e-472e-bdf8-7350dfffb388" />
     <resource>
       <Task>
-        <id value="f744a143-fe5b-498c-87b1-bbd14956be48" />
+        <id value="6751b6c0-385e-472e-bdf8-7350dfffb388" />
         <identifier>
           <system value="http://example.com/system" />
-          <value value="f744a143-fe5b-498c-87b1-bbd14956be48" />
+          <value value="6751b6c0-385e-472e-bdf8-7350dfffb388" />
         </identifier>
         <groupIdentifier>
           <system value="http://example.com/system" />
@@ -52,12 +52,12 @@
           </coding>
           <coding>
             <system value="TEMP-https://www.accessdata.fda.gov/eCTD" />
-            <code value="fdasst5" />
-            <display value="Resubmission" />
+            <code value="fdasst7" />
+            <display value="Correspondence" />
           </coding>
-          <text value="NDA Labeling Original Resubmission" />
+          <text value="NDA Labeling Initial Submission FDA Correspondence" />
         </code>
-        <description value="Please review the change made to: Supplemental new drug application (sNDA) to add information to section XX and remove information from section YY" />
+        <description value="Changes are acceptable; no more changes are requested. Submit final draft: Supplemental new drug application (sNDA) to add information to section XX and remove information from section YY" />
         <focus>
 			<reference value="Task/bd675726-6ca7-4fce-8edb-6f29c0df2bcc"/>
         </focus>
@@ -75,6 +75,11 @@
         <owner>
           <reference value="Organization/FDAID" />
         </owner>
+        <reason>
+			<reference>
+				<reference value="Task/f744a143-fe5b-498c-87b1-bbd14956be48"/>
+			</reference>
+        </reason>
         <input>
           <type>
             <coding>
@@ -82,20 +87,7 @@
               <code value="34391-3" />
               <display value="HUMAN PRESCRIPTION DRUG LABEL" />
             </coding>
-            <text value="Annotated HUMAN PRESCRIPTION DRUG LABEL" />
-          </type>
-          <valueReference>
-            <reference value="Bundle/2ab7db9e-5d14-431f-a3a3-a2da3d1047b2" />
-          </valueReference>
-        </input>
-        <input>
-          <type>
-            <coding>
-              <system value="oid:2.16.840.1.113881.6.1" />
-              <code value="34391-3" />
-              <display value="HUMAN PRESCRIPTION DRUG LABEL" />
-            </coding>
-            <text value="HUMAN PRESCRIPTION DRUG LABEL" />
+            <text value="No Changes Requested" />
           </type>
           <valueReference>
             <reference value="Bundle/2ab7db9e-5d14-431f-a3a3-a2da3d1047b2" />
@@ -241,9 +233,12 @@
                         <li>an aromatase inhibitor as initial endocrine-based therapy; or</li>
                         <li>fulvestrant in patients with disease progression following endocrine therapy.</li>
                       </ul>
+                      <a id="s001" class="InsertStart"/>
+                      <p>This is some additional text that has been inserted into the document.</p>
+                      <a class="InsertEnd" href="#s001"/>
                     </div>
                     <div xmlns="http://www.w3.org/1999/xhtml" style="highlight">
-                      <p>IBRANCE is a kinase inhibitor indicated for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative advanced or metastatic breast cancer in combination with:</p>
+                      <p>IBRANCE is a kinase inhibitor indicated for the treatment of adult patients with hormone receptor (HR)-positive, human epidermal growth factor receptor 2 (HER2)-negative advanced <a id="s002" class="DeleteStart"/>or metastatic breast cancer <a class="DeleteEnd" href="#s002" />in combination with:</p>
                       <ul>
                         <li>
                           an aromatase inhibitor as initial endocrine-based therapy (
