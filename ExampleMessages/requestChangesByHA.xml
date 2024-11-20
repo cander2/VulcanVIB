@@ -51,6 +51,7 @@
             <display value="Original Application" />
           </coding>
           <coding>
+			<!-- the code used here is used to indicate that this Task is asking for changes to the last label submission -->
             <system value="TEMP-https://www.accessdata.fda.gov/eCTD" />
             <code value="fdasst7" />
             <display value="Correspondence" />
@@ -59,6 +60,7 @@
         </code>
         <description value="Please make a change for: Supplemental new drug application (sNDA) to add information to section XX and remove information from section YY" />
         <focus>
+			<!-- this is a reference to the initial submission Task in the initialSubmissionBySponsor message -->
 			<reference value="Task/bd675726-6ca7-4fce-8edb-6f29c0df2bcc"/>
         </focus>
         <for>
@@ -90,6 +92,7 @@
             <text value="HUMAN PRESCRIPTION DRUG LABEL" />
           </type>
           <valueReference>
+			 <!-- the document bunder this task references contains the comments and modifications made by the HA -->
             <reference value="Bundle/2ab7db9e-5d14-431f-a3a3-a2da3d1047b2" />
           </valueReference>
         </input>
@@ -99,6 +102,7 @@
   <entry>
     <fullUrl value="Bundle/2ab7db9e-5d14-431f-a3a3-a2da3d1047b2" />
     <resource>
+		<!-- this document bundle is not fully complete, but would contain the changes the HA would like to see. -->
       <Bundle xmlns:xhtml="http://www.w3.org/1999/xhtml">
         <id value="2ab7db9e-5d14-431f-a3a3-a2da3d1047b2" />
         <identifier>

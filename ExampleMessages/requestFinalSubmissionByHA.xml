@@ -40,6 +40,7 @@
         <status value="requested" />
         <intent value="order" />
         <code>
+		  <!-- the code used here would indicate that no more changes are needed on the label, and a final submission should be sent -->
           <coding>
             <system value="TEMP-https://www.accessdata.fda.gov/eCTD" />
             <code value="fdaat1" />
@@ -52,13 +53,14 @@
           </coding>
           <coding>
             <system value="TEMP-https://www.accessdata.fda.gov/eCTD" />
-            <code value="fdasst7" />
+            <code value="fdasst7a" />
             <display value="Correspondence" />
           </coding>
           <text value="NDA Labeling Initial Submission FDA Correspondence" />
         </code>
         <description value="Changes are acceptable; no more changes are requested. Submit final draft: Supplemental new drug application (sNDA) to add information to section XX and remove information from section YY" />
         <focus>
+			<!-- This is a reference to the initial submission Task in the initialSubmissionBySponsor message -->
 			<reference value="Task/bd675726-6ca7-4fce-8edb-6f29c0df2bcc"/>
         </focus>
         <for>
@@ -77,9 +79,11 @@
         </owner>
         <reason>
 			<reference>
+				<!-- this reference is to the previous Task submitted by the sponsor, in the case the respondChangeBySponsor message-->
 				<reference value="Task/f744a143-fe5b-498c-87b1-bbd14956be48"/>
 			</reference>
         </reason>
+        <!-- only one input in this task, a clean copy of the label that was last submitted. -->
         <input>
           <type>
             <coding>

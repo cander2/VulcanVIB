@@ -81,6 +81,7 @@
             </coding>
             <text value="HUMAN PRESCRIPTION DRUG LABEL" />
           </type>
+          <!-- reference to document bundle in this document that contains the label being submitted -->
           <valueReference>
             <reference value="Bundle/2ab7db9e-5d14-431f-a3a3-a2da3d1047b2" />
           </valueReference>
