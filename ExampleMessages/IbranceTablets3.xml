@@ -23,8 +23,9 @@
                 <language value="en" />
                 <text>
                     <status value="generated" />
-                    <div xmlns="http://www.w3.org/1999/xhtml">These highlights do not include all the information needed to use IBRANCE safely and effectively.  See full prescribing information for IBRANCE. <br/>
-                        <br/>IBRANCE<sup>®</sup> (palbociclib) capsules, for oral use <br/>Initial U.S. Approval: 2015
+                    <div xmlns="http://www.w3.org/1999/xhtml">These highlights do not include all the information needed
+                        to use IBRANCE safely and effectively. See full prescribing information for IBRANCE. <br />
+                        <br />IBRANCE<sup>®</sup> (palbociclib) capsules, for oral use <br />Initial U.S. Approval: 2015
                     </div>
                 </text>
                 <version value="15" />
@@ -171,7 +172,7 @@
                 </subject>
                 <date value="2022-09-08T00:00:00Z" />
                 <author>
-                    <reference value="Organization/pfizerlabs" />
+                    <reference value="Organization/134489525" />
                 </author>
                 <title value="Drug Label for IBRANCE (palbociclib) film coated tablets" />
                 <section id="4a7f4ea7-edd4-42b9-8f79-20cbdcfac3a5">
@@ -221,7 +222,14 @@
                         <valueString value="S1" />
                     </extension>
                     <title value="1 INDICATIONS AND USAGE" />
-                    <code><coding><system value="http://loinc.org" /><code value="34067-9" /><display value="INDICATIONS &amp; USAGE SECTION" /></coding></code><text>
+                    <code>
+                        <coding>
+                            <system value="http://loinc.org" />
+                            <code value="34067-9" />
+                            <display value="INDICATIONS &amp; USAGE SECTION" />
+                        </coding>
+                    </code>
+                    <text>
                         <status value="additional" />
                         <div xmlns="http://www.w3.org/1999/xhtml">
                             <div style="highlight">
@@ -608,8 +616,10 @@
                             <div style="narrative">
                                 <p>125 mg capsules: opaque, hard gelatin capsules, size 0, with caramel cap and body,
                                     printed with white ink "Pfizer" on the cap, "PBC 125" on the body.</p>
-                                <p><del id="del1" cite="Pfizer" datetime="2024-11-25T10:00:00Z">100 mg capsules: opaque, hard gelatin capsules, size 1, with caramel cap and light
-                                    orange body, printed with white ink "Pfizer" on the cap, "PBC 100" on the body.</del></p>
+                                <p><del id="del1" cite="Pfizer" datetime="2024-11-25T10:00:00Z">100 mg capsules: opaque,
+                                        hard gelatin capsules, size 1, with caramel cap and light
+                                        orange body, printed with white ink "Pfizer" on the cap, "PBC 100" on the
+                                        body.</del></p>
                                 <p>75 mg capsules: opaque, hard gelatin capsules, size 2, with light orange cap and
                                     body, printed with white ink "Pfizer" on the cap, "PBC 75" on the body.</p>
                             </div>
@@ -3224,7 +3234,8 @@
                                     C<sub>24</sub>H<sub>29</sub>N<sub>7</sub>O<sub>2</sub>. The molecular weight is
                                     447.54 daltons. The chemical name is
                                     6-acetyl-8-cyclopentyl-5-methyl-2-{[5-(piperazin-1-yl)pyridin-2-yl]amino}pyrido[2,3-<em>d</em>]pyrimidin-7(8<em>H</em>)-one,
-                                    and its structural formula is:</p><img src="#ibrance-01" alt="Chemical Structure" />
+                                    and its structural formula is:</p>
+                                <img src="#ibrance-01" alt="Chemical Structure" />
                                 <p>Palbociclib is a yellow to orange powder with pKa of 7.4 (the secondary piperazine
                                     nitrogen) and 3.9 (the pyridine nitrogen). At or below pH 4, palbociclib behaves as
                                     a high-solubility compound. Above pH 4, the solubility of the drug substance reduces
@@ -5214,436 +5225,124 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Organization/pfizerlabs" />
+        <fullUrl value="Organization/134489525" />
         <resource>
             <Organization>
-                <id value="pfizerlabs" />
+                <id value="134489525" />
+                <meta>
+                <profile value="http://hl7.org/fhir/us/spl/StructureDefinition/IdentifiedLabeler" />
+                </meta>
                 <identifier>
                     <system value="urn:oid:1.3.6.1.4.1.519.1" />
                     <value value="134489525" />
                 </identifier>
-                <active value="true" />
                 <type>
                     <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/organization-type" />
-                        <code value="bus" />
-                        <display value="Non-Healthcare Business or Corporation" />
+                        <system value="http://hl7.org/fhir/us/spl/CodeSystem/codesystem-organizationTypes" />
+                        <code value="Labeler" />
                     </coding>
                 </type>
-                <name value="Pfizer Labs Division of Pfizer Inc" />
-                <telecom>
-                    <system value="phone" />
-                    <value value="1-800-438-1985" />
-                    <use value="work" />
-                </telecom>
-                <address>
-                    <use value="work" />
-                    <line value="235 E 42nd St" />
-                    <city value="New York" />
-                    <state value="New York" />
-                    <postalCode value="10017" />
-                    <country value="USA" />
-                </address>
+                <name value="Pfizer Laboratories Div Pfizer Inc" />
             </Organization>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Organization/pfizerpharmllc" />
+        <fullUrl value="Organization/618054084" />
         <resource>
             <Organization>
-                <id value="pfizerpharmllc" />
+                <id value="618054084" />
+                <meta>
+                <profile value="http://hl7.org/fhir/us/spl/StructureDefinition/IdentifiedEstablishment" />
+                </meta>
                 <identifier>
                     <system value="urn:oid:1.3.6.1.4.1.519.1" />
-                    <value value="829084552" />
+                    <value value="618054084" />
                 </identifier>
-                <active value="true" />
                 <type>
                     <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/organization-type" />
-                        <code value="bus" />
-                        <display value="Non-Healthcare Business or Corporation" />
+                        <system value="http://hl7.org/fhir/us/spl/CodeSystem/codesystem-organizationTypes" />
+                        <code value="Establishment" />
                     </coding>
                 </type>
-                <name value="Pfizer Pharmaceuticals LLC" />
+                <name value="Pharmacia &amp; Upjohn Company LLC (DUNS: 618054084)" />
             </Organization>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Organization/pfizerireland" />
+        <fullUrl value="Organization/985052076" />
         <resource>
             <Organization>
-                <id value="pfizerireland" />
+                <id value="985052076" />
+                <meta>
+                <profile value="http://hl7.org/fhir/us/spl/StructureDefinition/IdentifiedEstablishment" />
+                </meta>
                 <identifier>
                     <system value="urn:oid:1.3.6.1.4.1.519.1" />
                     <value value="985052076" />
                 </identifier>
-                <active value="true" />
                 <type>
                     <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/organization-type" />
-                        <code value="bus" />
-                        <display value="Non-Healthcare Business or Corporation" />
+                        <system value="http://hl7.org/fhir/us/spl/CodeSystem/codesystem-organizationTypes" /><code
+                            value="Establishment" />
                     </coding>
                 </type>
-                <name value="Pfizer Ireland Pharmaceuticals" />
+                <name value="Pfizer Ireland Pharmaceuticals (DUNS: 985052076)" />
             </Organization>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Organization/pfizergermany" />
+        <fullUrl value="Organization/341970073" />
         <resource>
             <Organization>
-                <id value="pfizergermany" />
+                <id value="341970073" />
+                <meta>
+                <profile value="http://hl7.org/fhir/us/spl/StructureDefinition/IdentifiedEstablishment" />
+                </meta>
                 <identifier>
                     <system value="urn:oid:1.3.6.1.4.1.519.1" />
                     <value value="341970073" />
                 </identifier>
-                <active value="true" />
                 <type>
                     <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/organization-type" />
-                        <code value="bus" />
-                        <display value="Non-Healthcare Business or Corporation" />
+                        <system value="http://hl7.org/fhir/us/spl/CodeSystem/codesystem-organizationTypes" />
+                        <code value="Establishment" />
                     </coding>
                 </type>
-                <name value="Pfizer Manufacturing Deutschland GmbH" />
+                <name value="Pfizer Manufacturing Deutschland GmbH (DUNS: 341970073)" />
             </Organization>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Organization/fda" />
+        <fullUrl value="Organization/936889401" />
         <resource>
             <Organization>
-                <id value="fda" />
+                <id value="936889401" />
+                <meta>
+                <profile value="http://hl7.org/fhir/us/spl/StructureDefinition/IdentifiedEstablishment" />
+                </meta>
                 <identifier>
                     <system value="urn:oid:1.3.6.1.4.1.519.1" />
-                    <value value="999999999999999" />
+                    <value value="936889401" />
                 </identifier>
-                <active value="true" />
                 <type>
                     <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/organization-type" />
-                        <code value="govt" />
-                        <display value="Government" />
+                        <system value="http://hl7.org/fhir/us/spl/CodeSystem/codesystem-organizationTypes" />
+                        <code value="Establishment" />
                     </coding>
                 </type>
-                <name value="Food and Drug Administration" />
-                <telecom>
-                    <system value="phone" />
-                    <value value="1-800-FDA-1088" />
-                    <use value="work" />
-                </telecom>
-                <address>
-                    <use value="work" />
-                    <line value="10903 New Hampshire Ave" />
-                    <city value="Silver Spring" />
-                    <state value="MD" />
-                    <postalCode value="20993" />
-                    <country value="USA" />
-                </address>
+                <name value="Pfizer Asia Manufacturing Pte Ltd (DUNS: 936889401)" />
             </Organization>
         </resource>
     </entry>
-    Here are the FHIR Ingredient resources for the specified ingredients, formatted similarly to your example:
-
-```xml
-<entry>
-    <fullUrl value="Ingredient/LACTOSE_MONOHYDRATE" />
-    <resource>
-        <Ingredient>
-            <id value="LACTOSE_MONOHYDRATE" />
-            <identifier>
-                <coding>
-                    <system value="http://fdasis.nlm.nih.gov" />
-                    <value value="EWQ57Q8I5X" />
-                </coding>
-            </identifier>
-            <status value="active" />
-            <role>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass" />
-                    <code value="IACT" />
-                    <display value="inactive ingredient" />
-                </coding>
-                <text value="Inactive" />
-            </role>
-            <allergenicIndicator value="true" />
-            <substance>
-                <code>
-                    <concept>
-                        <coding>
-                            <system value="http://fdasis.nlm.nih.gov" />
-                            <value value="EWQ57Q8I5X" />
-                            <display value="LACTOSE MONOHYDRATE" />
-                        </coding>
-                    </concept>
-                </code>
-            </substance>
-        </Ingredient>
-    </resource>
-</entry>
-
-<entry>
-    <fullUrl value="Ingredient/SODIUM_STARCH_GLYCOLATE_TYPE_A_POTATO" />
-    <resource>
-        <Ingredient>
-            <id value="SODIUM_STARCH_GLYCOLATE_TYPE_A_POTATO" />
-            <identifier>
-                <coding>
-                    <system value="http://fdasis.nlm.nih.gov" />
-                    <value value="5856J3G2A2" />
-                </coding>
-            </identifier>
-            <status value="active" />
-            <role>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass" />
-                    <code value="IACT" />
-                    <display value="inactive ingredient" />
-                </coding>
-                <text value="Inactive" />
-            </role>
-            <allergenicIndicator value="false" />
-            <substance>
-                <code>
-                    <concept>
-                        <coding>
-                            <system value="http://fdasis.nlm.nih.gov" />
-                            <value value="5856J3G2A2" />
-                            <display value="SODIUM STARCH GLYCOLATE TYPE A POTATO" />
-                        </coding>
-                    </concept>
-                </code>
-            </substance>
-        </Ingredient>
-    </resource>
-</entry>
-
-<entry>
-    <fullUrl value="Ingredient/GELATIN_UNSPECIFIED" />
-    <resource>
-        <Ingredient>
-            <id value="GELATIN_UNSPECIFIED" />
-            <identifier>
-                <coding>
-                    <system value="http://fdasis.nlm.nih.gov" />
-                    <value value="2G86QN327L" />
-                </coding>
-            </identifier>
-            <status value="active" />
-            <role>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass" />
-                    <code value="IACT" />
-                    <display value="inactive ingredient" />
-                </coding>
-                <text value="Inactive" />
-            </role>
-            <allergenicIndicator value="true" />
-            <substance>
-                <code>
-                    <concept>
-                        <coding>
-                            <system value="http://fdasis.nlm.nih.gov" />
-                            <value value="2G86QN327L" />
-                            <display value="GELATIN, UNSPECIFIED" />
-                        </coding>
-                    </concept>
-                </code>
-            </substance>
-        </Ingredient>
-    </resource>
-</entry>
-
-<entry>
-    <fullUrl value="Ingredient/FERRIC_OXIDE_YELLOW" />
-    <resource>
-        <Ingredient>
-            <id value="FERRIC_OXIDE_YELLOW" />
-            <identifier>
-                <coding>
-                    <system value="http://fdasis.nlm.nih.gov" />
-                    <value value="EX438O2MRT" />
-                </coding>
-            </identifier>
-            <status value="active" />
-            <role>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass" />
-                    <code value="IACT" />
-                    <display value="inactive ingredient" />
-                </coding>
-                <text value="Inactive" />
-            </role>
-            <allergenicIndicator value="false" />
-            <substance>
-                <code>
-                    <concept>
-                        <coding>
-                            <system value="http://fdasis.nlm.nih.gov" />
-                            <value value="EX438O2MRT" />
-                            <display value="FERRIC OXIDE YELLOW" />
-                        </coding>
-                    </concept>
-                </code>
-            </substance>
-        </Ingredient>
-    </resource>
-</entry>
-
-<entry>
-    <fullUrl value="Ingredient/SHELLAC" />
-    <resource>
-        <Ingredient>
-            <id value="SHELLAC" />
-            <identifier>
-                <coding>
-                    <system value="http://fdasis.nlm.nih.gov" />
-                    <value value="46N107B71O" />
-                </coding>
-            </identifier>
-            <status value="active" />
-            <role>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass" />
-                    <code value="IACT" />
-                    <display value="inactive ingredient" />
-                </coding>
-                <text value="Inactive" />
-            </role>
-            <allergenicIndicator value="false" />
-            <substance>
-                <code>
-                    <concept>
-                        <coding>
-                            <system value="http://fdasis.nlm.nih.gov" />
-                            <value value="46N107B71O" />
-                            <display value="SHELLAC" />
-                        </coding>
-                    </concept>
-                </code>
-            </substance>
-        </Ingredient>
-    </resource>
-</entry>
-
-<entry>
-    <fullUrl value="Ingredient/AMMONIA" />
-    <resource>
-        <Ingredient>
-            <id value="AMMONIA" />
-            <identifier>
-                <coding>
-                    <system value="http://fdasis.nlm.nih.gov" />
-                    <value value="5138Q19F1X" />
-                </coding>
-            </identifier>
-            <status value="active" />
-            <role>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass" />
-                    <code value="IACT" />
-                    <display value="inactive ingredient" />
-                </coding>
-                <text value="Inactive" />
-            </role>
-            <allergenicIndicator value="false" />
-            <substance>
-                <code>
-                    <concept>
-                        <coding>
-                            <system value="http://fdasis.nlm.nih.gov" />
-                            <value value="5138Q19F1X" />
-                            <display value="AMMONIA" />
-                        </coding>
-                    </concept>
-                </code>
-            </substance>
-        </Ingredient>
-    </resource>
-</entry>
-
-<entry>
-    <fullUrl value="Ingredient/PROPYLENE_GLYCOL" />
-    <resource>
-        <Ingredient>
-            <id value="PROPYLENE_GLYCOL" />
-            <identifier>
-                <coding>
-                    <system value="http://fdasis.nlm.nih.gov" />
-                    <value value="6DC9Q167V3" />
-                </coding>
-            </identifier>
-            <status value="active" />
-            <role>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass" />
-                    <code value="IACT" />
-                    <display value="inactive ingredient" />
-                </coding>
-                <text value="Inactive" />
-            </role>
-            <allergenicIndicator value="false" />
-            <substance>
-                <code>
-                    <concept>
-                        <coding>
-                            <system value="http://fdasis.nlm.nih.gov" />
-                            <value value="6DC9Q167V3" />
-                            <display value="PROPYLENE GLYCOL" />
-                        </coding>
-                    </concept>
-                </code>
-            </substance>
-        </Ingredient>
-    </resource>
-</entry>
-<entry>
-    <fullUrl value="Ingredient/DIMETHICONE" />
-    <resource>
-        <Ingredient>
-            <id value="DIMETHICONE" />
-            <identifier>
-                <coding>
-                    <system value="http://fdasis.nlm.nih.gov" />
-                    <value value="92RU3N3Y1O" />
-                </coding>
-            </identifier>
-            <status value="active" />
-            <role>
-                <coding>
-                    <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass" />
-                    <code value="IACT" />
-                    <display value="inactive ingredient" />
-                </coding>
-                <text value="Inactive" />
-            </role>
-            <allergenicIndicator value="false" />
-            <substance>
-                <code>
-                    <concept>
-                        <coding>
-                            <system value="http://fdasis.nlm.nih.gov" />
-                            <value value="92RU3N3Y1O" />
-                            <display value="DIMETHICONE" />
-                        </coding>
-                    </concept>
-                </code>
-            </substance>
-        </Ingredient>
-        </resource>
-    </entry>
     <entry>
-        <fullUrl value="Ingredient/FERRIC-OXIDE-RED" />
+        <fullUrl value="Ingredient/LACTOSE_MONOHYDRATE" />
         <resource>
             <Ingredient>
-                <id value="FERRIC-OXIDE-RED" />
+                <id value="LACTOSE_MONOHYDRATE" />
                 <identifier>
-                    <coding>
-
-                        <system value="http://fdasis.nlm.nih.gov" />
-                        <value value="1K09F3G675" />
-                    </coding>
+                    <use value="official" />
+                    <system value="http://fdasis.nlm.nih.gov" />
+                    <value value="EWQ57Q8I5X" />
                 </identifier>
                 <status value="active" />
                 <for>
@@ -5661,37 +5360,41 @@
                         <code value="IACT" />
                         <display value="inactive ingredient" />
                     </coding>
-                    <text value="Inactive" />
                 </role>
-                <allergenicIndicator value="false" />
+                <allergenicIndicator value="true" />
                 <substance>
                     <code>
-                        <concept>
-                            <coding>
-                                <system value="http://fdasis.nlm.nih.gov" />
-                                <value value="1K09F3G675" />
-                                <display value="FERRIC OXIDE RED" />
-                            </coding>
-                        </concept>
-                    </code>
+                    <concept>
+                        <coding>
+                            <system value="http://fdasis.nlm.nih.gov" />
+                            <code value="EWQ57Q8I5X" />
+                            <display value="LACTOSE MONOHYDRATE" />
+                        </coding>
+                    </concept>
+                </code>
                 </substance>
             </Ingredient>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="Ingredient/FERRIC-OXIDE-YELLOW" />
+        <fullUrl value="Ingredient/SODIUM_STARCH_GLYCOLATE_TYPE_A_POTATO" />
         <resource>
             <Ingredient>
-                <id value="FERRIC-OXIDE-YELLOW" />
+                <id value="SODIUM_STARCH_GLYCOLATE_TYPE_A_POTATO" />
                 <identifier>
-                    <coding>
-                        <system value="http://fdasis.nlm.nih.gov" />
-                        <value value="EX438O2MRT" />
-                    </coding>
+                    <use value="official" />
+                    <system value="http://fdasis.nlm.nih.gov" />
+                    <value value="5856J3G2A2" />
                 </identifier>
                 <status value="active" />
                 <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB75" />
+                </for>
+                <for>
                     <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB100" />
+                </for>
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB125" />
                 </for>
                 <role>
                     <coding>
@@ -5699,7 +5402,300 @@
                         <code value="IACT" />
                         <display value="inactive ingredient" />
                     </coding>
-                    <text value="Inactive" />
+                </role>
+                <allergenicIndicator value="false" />
+                <substance>
+                    <code>
+                    <concept>
+                        <coding>
+                            <system value="http://fdasis.nlm.nih.gov" />
+                            <code value="5856J3G2A2" />
+                            <display value="SODIUM STARCH GLYCOLATE TYPE A POTATO" />
+                        </coding>
+                    </concept>
+                </code>
+                </substance>
+            </Ingredient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Ingredient/GELATIN_UNSPECIFIED" />
+        <resource>
+            <Ingredient>
+                <id value="GELATIN_UNSPECIFIED" />
+                <identifier>
+                    <use value="official" />
+                    <system value="http://fdasis.nlm.nih.gov" />
+                    <value value="2G86QN327L" />
+                </identifier>
+                <status value="active" />
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB75" />
+                </for>
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB100" />
+                </for>
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB125" />
+                </for>
+                <role>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass" />
+                        <code value="IACT" />
+                        <display value="inactive ingredient" />
+                    </coding>
+                </role>
+                <allergenicIndicator value="true" />
+                <substance>
+                    <code>
+                    <concept>
+                        <coding>
+                            <system value="http://fdasis.nlm.nih.gov" />
+                            <code value="2G86QN327L" />
+                            <display value="GELATIN, UNSPECIFIED" />
+                        </coding>
+                    </concept>
+                </code>
+                </substance>
+            </Ingredient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Ingredient/FERRIC_OXIDE_YELLOW" />
+        <resource>
+            <Ingredient>
+                <id value="FERRIC_OXIDE_YELLOW" />
+                <identifier>
+                    <use value="official" />
+                    <system value="http://fdasis.nlm.nih.gov" />
+                    <value value="EX438O2MRT" />
+                </identifier>
+                <status value="active" />
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB75" />
+                </for>
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB100" />
+                </for>
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB125" />
+                </for>
+                <role>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass" />
+                        <code value="IACT" />
+                        <display value="inactive ingredient" />
+                    </coding>
+                </role>
+                <allergenicIndicator value="false" />
+                <substance>
+                    <code>
+                    <concept>
+                        <coding>
+                            <system value="http://fdasis.nlm.nih.gov" />
+                            <code value="EX438O2MRT" />
+                            <display value="FERRIC OXIDE YELLOW" />
+                        </coding>
+                    </concept>
+                </code>
+                </substance>
+            </Ingredient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Ingredient/SHELLAC" />
+        <resource>
+            <Ingredient>
+                <id value="SHELLAC" />
+                <identifier>
+                    <use value="official" />
+                    <system value="http://fdasis.nlm.nih.gov" />
+                    <value value="46N107B71O" />
+                </identifier>
+                <status value="active" />
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB75" />
+                </for>
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB100" />
+                </for>
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB125" />
+                </for>
+                <role>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass" />
+                        <code value="IACT" />
+                        <display value="inactive ingredient" />
+                    </coding>
+                </role>
+                <allergenicIndicator value="false" />
+                <substance>
+                    <code>
+                    <concept>
+                        <coding>
+                            <system value="http://fdasis.nlm.nih.gov" />
+                            <code value="46N107B71O" />
+                            <display value="SHELLAC" />
+                        </coding>
+                    </concept>
+                </code>
+                </substance>
+            </Ingredient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Ingredient/AMMONIA" />
+        <resource>
+            <Ingredient>
+                <id value="AMMONIA" />
+                <identifier>
+                    <use value="official" />
+                    <system value="http://fdasis.nlm.nih.gov" />
+                    <value value="5138Q19F1X" />
+                </identifier>
+                <status value="active" />
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB75" />
+                </for>
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB100" />
+                </for>
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB125" />
+                </for>
+                <role>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass" />
+                        <code value="IACT" />
+                        <display value="inactive ingredient" />
+                    </coding>
+                </role>
+                <allergenicIndicator value="false" />
+                <substance>
+                    <code>
+                    <concept>
+                        <coding>
+                            <system value="http://fdasis.nlm.nih.gov" />
+                            <code value="5138Q19F1X" />
+                            <display value="AMMONIA" />
+                        </coding>
+                    </concept>
+                </code>
+                </substance>
+            </Ingredient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Ingredient/PROPYLENE_GLYCOL" />
+        <resource>
+            <Ingredient>
+                <id value="PROPYLENE_GLYCOL" />
+                <identifier>
+                    <use value="official" />
+                    <system value="http://fdasis.nlm.nih.gov" />
+                    <value value="6DC9Q167V3" />
+                </identifier>
+                <status value="active" />
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB75" />
+                </for>
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB100" />
+                </for>
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB125" />
+                </for>
+                <role>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass" />
+                        <code value="IACT" />
+                        <display value="inactive ingredient" />
+                    </coding>
+                </role>
+                <allergenicIndicator value="false" />
+                <substance>
+                    <code>
+                    <concept>
+                        <coding>
+                            <system value="http://fdasis.nlm.nih.gov" />
+                            <code value="6DC9Q167V3" />
+                            <display value="PROPYLENE GLYCOL" />
+                        </coding>
+                    </concept>
+                </code>
+                </substance>
+            </Ingredient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Ingredient/DIMETHICONE" />
+        <resource>
+            <Ingredient>
+                <id value="DIMETHICONE" />
+                <identifier>
+                    <use value="official" />
+                    <system value="http://fdasis.nlm.nih.gov" />
+                    <value value="92RU3N3Y1O" />
+                </identifier>
+                <status value="active" />
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB75" />
+                </for>
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB100" />
+                </for>
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB125" />
+                </for>
+                <role>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass" />
+                        <code value="IACT" />
+                        <display value="inactive ingredient" />
+                    </coding>
+                </role>
+                <allergenicIndicator value="false" />
+                <substance>
+                    <code>
+                    <concept>
+                        <coding>
+                            <system value="http://fdasis.nlm.nih.gov" />
+                            <code value="92RU3N3Y1O" />
+                            <display value="DIMETHICONE" />
+                        </coding>
+                    </concept>
+                </code>
+                </substance>
+            </Ingredient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="Ingredient/FERRIC-OXIDE-RED" />
+        <resource>
+            <Ingredient>
+                <id value="FERRIC-OXIDE-RED" />
+                <identifier>
+                    <use value="official" />
+                    <system value="http://fdasis.nlm.nih.gov" />
+                    <value value="1K09F3G675" />
+                </identifier>
+                <status value="active" />
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB75" />
+                </for>
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB100" />
+                </for>
+                <for>
+                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB125" />
+                </for>
+                <role>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass" />
+                        <code value="IACT" />
+                        <display value="inactive ingredient" />
+                    </coding>
                 </role>
                 <allergenicIndicator value="false" />
                 <substance>
@@ -5707,8 +5703,8 @@
                         <concept>
                             <coding>
                                 <system value="http://fdasis.nlm.nih.gov" />
-                                <value value="EX438O2MRT" />
-                                <display value="FERRIC OXIDE YELLOW" />
+                                <code value="1K09F3G675" />
+                                <display value="FERRIC OXIDE RED" />
                             </coding>
                         </concept>
                     </code>
@@ -5722,11 +5718,9 @@
             <Ingredient>
                 <id value="MAGNESIUM-STEARATE" />
                 <identifier>
-                    <coding>
-
-                        <system value="http://fdasis.nlm.nih.gov" />
-                        <value value="70097M6I30" />
-                    </coding>
+                    <use value="official" />
+                    <system value="http://fdasis.nlm.nih.gov" />
+                    <value value="70097M6I30" />
                 </identifier>
                 <status value="active" />
                 <for>
@@ -5744,7 +5738,6 @@
                         <code value="IACT" />
                         <display value="inactive ingredient" />
                     </coding>
-                    <text value="Inactive" />
                 </role>
                 <allergenicIndicator value="false" />
                 <substance>
@@ -5752,7 +5745,7 @@
                         <concept>
                             <coding>
                                 <system value="http://fdasis.nlm.nih.gov" />
-                                <value value="70097M6I30" />
+                                <code value="70097M6I30" />
                                 <display value="MAGNESIUM STEARATE" />
                             </coding>
                         </concept>
@@ -5767,11 +5760,9 @@
             <Ingredient>
                 <id value="MICROCRYSTALLINE-CELLULOSE" />
                 <identifier>
-                    <coding>
-
-                        <system value="http://fdasis.nlm.nih.gov" />
-                        <value value="OP1R32D61U" />
-                    </coding>
+                    <use value="official" />
+                    <system value="http://fdasis.nlm.nih.gov" />
+                    <value value="OP1R32D61U" />
                 </identifier>
                 <status value="active" />
                 <for>
@@ -5789,7 +5780,6 @@
                         <code value="IACT" />
                         <display value="inactive ingredient" />
                     </coding>
-                    <text value="Inactive" />
                 </role>
                 <allergenicIndicator value="false" />
                 <substance>
@@ -5797,7 +5787,7 @@
                         <concept>
                             <coding>
                                 <system value="http://fdasis.nlm.nih.gov" />
-                                <value value="OP1R32D61U" />
+                                <code value="OP1R32D61U" />
                                 <display value="MICROCRYSTALLINE CELLULOSE" />
                             </coding>
                         </concept>
@@ -5812,11 +5802,9 @@
             <Ingredient>
                 <id value="palbociclib75" />
                 <identifier>
-                    <coding>
-
-                        <system value="http://fdasis.nlm.nih.gov" />
-                        <value value="G9ZF61LE7G" />
-                    </coding>
+                    <use value="official" />
+                    <system value="http://fdasis.nlm.nih.gov" />
+                    <value value="G9ZF61LE7G" />
                 </identifier>
                 <status value="active" />
                 <for>
@@ -5828,7 +5816,6 @@
                         <code value="ACTIB" />
                         <display value="active ingredient - basis of strength" />
                     </coding>
-                    <text value="Active" />
                 </role>
                 <group>
                     <coding>
@@ -5837,31 +5824,20 @@
                         <display value="Kinase Inhibitor" />
                     </coding>
                 </group>
-                <description value="PALBOCICLIB 75mg" />
                 <allergenicIndicator value="false" />
-                <manufacturer>
-                    <reference value="Organization/ORG UUID" />
-                </manufacturer>
                 <substance>
                     <code>
-                        <concept>
-                            <coding>
-                                <system value="http://fdasis.nlm.nih.gov" />
-                                <value value="G9ZF61LE7G" />
-                            </coding>
-                        </concept>
+                        <reference>
+                            <reference value="SubstanceDefinition/palbociclib" />
+                        </reference>
                     </code>
                     <strength>
-                        <presentationRatio>
-                            <numerator>
-                                <value value="75" />
-                                <unit value="mg" />
-                            </numerator>
-                            <denominator>
-                                <value value="1" />
-                                <unit value="1" />
-                            </denominator>
-                        </presentationRatio>
+                        <presentationQuantity>
+                            <system value="http://unitsofmeasure.org" />
+                            <value value="75" />
+                            <unit value="mg" />
+                            <code value="mg" />
+                        </presentationQuantity>
                     </strength>
                 </substance>
             </Ingredient>
@@ -5873,11 +5849,9 @@
             <Ingredient>
                 <id value="PALBOCICLIB100" />
                 <identifier>
-                    <coding>
-
-                        <system value="http://fdasis.nlm.nih.gov" />
-                        <value value="G9ZF61LE7G" />
-                    </coding>
+                    <use value="official" />
+                    <system value="http://fdasis.nlm.nih.gov" />
+                    <value value="G9ZF61LE7G" />
                 </identifier>
                 <status value="active" />
                 <for>
@@ -5889,7 +5863,6 @@
                         <code value="ACTIB" />
                         <display value="active ingredient - basis of strength" />
                     </coding>
-                    <text value="Active" />
                 </role>
                 <group>
                     <coding>
@@ -5900,29 +5873,19 @@
                 </group>
                 <description value="PALBOCICLIB 100mg" />
                 <allergenicIndicator value="false" />
-                <manufacturer>
-                    <reference value="Organization/pfizerireland" />
-                </manufacturer>
                 <substance>
                     <code>
-                        <concept>
-                            <coding>
-                                <system value="http://fdasis.nlm.nih.gov" />
-                                <value value="G9ZF61LE7G" />
-                            </coding>
-                        </concept>
+                        <reference>
+                            <reference value="SubstanceDefinition/palbociclib" />
+                        </reference>
                     </code>
                     <strength>
-                        <presentationRatio>
-                            <numerator>
-                                <value value="100" />
-                                <unit value="mg" />
-                            </numerator>
-                            <denominator>
-                                <value value="1" />
-                                <unit value="1" />
-                            </denominator>
-                        </presentationRatio>
+                        <presentationQuantity>
+                            <system value="http://unitsofmeasure.org" />
+                            <value value="100" />
+                            <unit value="mg" />
+                            <code value="mg" />
+                        </presentationQuantity>
                     </strength>
                 </substance>
             </Ingredient>
@@ -5934,11 +5897,9 @@
             <Ingredient>
                 <id value="PALBOCICLIB125" />
                 <identifier>
-                    <coding>
-
-                        <system value="http://fdasis.nlm.nih.gov" />
-                        <value value="G9ZF61LE7G" />
-                    </coding>
+                    <use value="official" />
+                    <system value="http://fdasis.nlm.nih.gov" />
+                    <value value="G9ZF61LE7G" />
                 </identifier>
                 <status value="active" />
                 <for>
@@ -5950,7 +5911,6 @@
                         <code value="ACTIB" />
                         <display value="active ingredient - basis of strength" />
                     </coding>
-                    <text value="Active" />
                 </role>
                 <group>
                     <coding>
@@ -5961,32 +5921,50 @@
                 </group>
                 <description value="PALBOCICLIB 125mg" />
                 <allergenicIndicator value="false" />
-                <manufacturer>
-                    <reference value="Organization/ORG UUID" />
-                </manufacturer>
                 <substance>
                     <code>
-                        <concept>
-                            <coding>
-                                <system value="http://fdasis.nlm.nih.gov" />
-                                <value value="G9ZF61LE7G" />
-                            </coding>
-                        </concept>
+                        <reference>
+                            <reference value="SubstanceDefinition/palbociclib" />
+                        </reference>
                     </code>
                     <strength>
-                        <presentationRatio>
-                            <numerator>
-                                <value value="125" />
-                                <unit value="mg" />
-                            </numerator>
-                            <denominator>
-                                <value value="1" />
-                                <unit value="1" />
-                            </denominator>
-                        </presentationRatio>
+                        <presentationQuantity>
+                            <system value="http://unitsofmeasure.org" />
+                            <value value="125" />
+                            <unit value="mg" />
+                            <code value="mg" />
+                        </presentationQuantity>
                     </strength>
                 </substance>
             </Ingredient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="SubstanceDefinition/palbociclib" />
+        <resource>
+            <SubstanceDefinition>
+                <id value="palbociclib" />
+                <meta>
+                <profile
+                    value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/SubstanceDefinition-uv-epi" />
+                </meta>
+                <identifier>
+                    <use value="official" />
+                    <system value="https://gsrs.ncats.nih.gov/ginas/app/beta/" />
+                    <value value="9QHX048FRV" />
+                </identifier>
+                <version value="1" />
+                <status>
+                    <coding>
+                        <system value="https://gsrs.ncats.nih.gov/ginas/app/beta/" />
+                        <code value="1" />
+                        <display value="Validated (UNII)" />
+                    </coding>
+                </status>
+                <name>
+                    <name value="palbociclib" />
+                </name>
+            </SubstanceDefinition>
         </resource>
     </entry>
     <entry>
@@ -6017,7 +5995,6 @@
                         <code value="IACT" />
                         <display value="inactive ingredient" />
                     </coding>
-                    <text value="Inactive" />
                 </role>
                 <allergenicIndicator value="false" />
                 <substance>
@@ -6025,7 +6002,7 @@
                         <concept>
                             <coding>
                                 <system value="http://fdasis.nlm.nih.gov" />
-                                <value value="ETJ7Z6XBU4" />
+                                <code value="ETJ7Z6XBU4" />
                                 <display value="SILICON DIOXIDE" />
                             </coding>
                         </concept>
@@ -6062,7 +6039,6 @@
                         <code value="IACT" />
                         <display value="inactive ingredient" />
                     </coding>
-                    <text value="Inactive" />
                 </role>
                 <allergenicIndicator value="false" />
                 <substance>
@@ -6070,56 +6046,11 @@
 					<concept>
 						<coding>
 							<system value="http://fdasis.nlm.nih.gov" />
-							<value value="AB6MNQ6J6L" />
+							<code value="AB6MNQ6J6L" />
 							<display value="SUCCINIC ACID" />
 						</coding>
 					</concept>
 				</code>
-                </substance>
-            </Ingredient>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="Ingredient/TITANIUM-DIOXIDE" />
-        <resource>
-            <Ingredient>
-                <id value="TITANIUM-DIOXIDE" />
-                <identifier>
-                    <coding>
-
-                        <system value="http://fdasis.nlm.nih.gov" />
-                        <code value="15FIX9V2JP" />
-                    </coding>
-                </identifier>
-                <status value="active" />
-                <for>
-                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB75" />
-                </for>
-                <for>
-                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB100" />
-                </for>
-                <for>
-                    <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB125" />
-                </for>
-                <role>
-                    <coding>
-                        <system value="http://terminology.hl7.org/CodeSystem/v3-RoleClass" />
-                        <code value="IACT" />
-                        <display value="inactive ingredient" />
-                    </coding>
-                    <text value="Inactive" />
-                </role>
-                <allergenicIndicator value="false" />
-                <substance>
-                    <code>
-                        <concept>
-                            <coding>
-                                <system value="http://fdasis.nlm.nih.gov" />
-                                <code value="15FIX9V2JP" />
-                                <display value="TITANIUM DIOXIDE" />
-                            </coding>
-                        </concept>
-                    </code>
                 </substance>
             </Ingredient>
         </resource>
@@ -6148,7 +6079,7 @@
                     </coding>
                 </unitOfPresentation>
                 <manufacturer>
-                    <reference value="Organization/pfizergermany" />
+                    <reference value="Organization/341970073" />
                 </manufacturer>
                 <property>
                     <type>
@@ -6236,7 +6167,7 @@
                     </coding>
                 </unitOfPresentation>
                 <manufacturer>
-                    <reference value="Organization/pfizergermany" />
+                    <reference value="Organization/341970073" />
                 </manufacturer>
                 <property>
                     <type>
@@ -6325,7 +6256,7 @@
                     </coding>
                 </unitOfPresentation>
                 <manufacturer>
-                    <reference value="Organization/pfizergermany" />
+                    <reference value="Organization/341970073" />
                 </manufacturer>
                 <property>
                     <type>
@@ -6444,43 +6375,43 @@
                     <part>
                         <part value="palbociclib" />
                         <type>
-                          <coding>
-                            <system value="http://ncit.nci.nih.gov" />
-                            <code value="C71898" />
-                          </coding>
-                          <text value="Proprietary Name" />
+                            <coding>
+                                <system value="http://ncit.nci.nih.gov" />
+                                <code value="C71898" />
+                            </coding>
+                            <text value="Proprietary Name" />
                         </type>
-                      </part>
-                      <part>
+                    </part>
+                    <part>
                         <part value="palbociclib" />
                         <type>
-                          <coding>
-                            <system value="http://ncit.nci.nih.gov" />
-                            <code value="C3273150" />
-                          </coding>
-                          <text value="NONPROPRIETARY" />
+                            <coding>
+                                <system value="http://ncit.nci.nih.gov" />
+                                <code value="C3273150" />
+                            </coding>
+                            <text value="NONPROPRIETARY" />
                         </type>
-                      </part>
-                      <part>
+                    </part>
+                    <part>
                         <part value="75 mg" />
                         <type>
-                          <coding>
-                            <system value="http://ncit.nci.nih.gov" />
-                            <code value="220000000004" />
-                          </coding>
-                          <text value="Strength part" />
+                            <coding>
+                                <system value="http://ncit.nci.nih.gov" />
+                                <code value="220000000004" />
+                            </coding>
+                            <text value="Strength part" />
                         </type>
-                      </part>
-                      <part>
+                    </part>
+                    <part>
                         <part value="CAPSULE" />
                         <type>
-                          <coding>
-                            <system value="http://ncit.nci.nih.gov" />
-                            <code value="C25158" />
-                            <display value="Pharmaceutical dose form part" />
-                          </coding>
+                            <coding>
+                                <system value="http://ncit.nci.nih.gov" />
+                                <code value="C25158" />
+                                <display value="Pharmaceutical dose form part" />
+                            </coding>
                         </type>
-                      </part>
+                    </part>
                     <countryLanguage>
                         <country>
                             <coding>
@@ -6498,6 +6429,80 @@
                         </language>
                     </countryLanguage>
                 </name>
+                <operation>
+                    <type>
+                        <concept>
+                            <coding>
+                                <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
+                                <code value="C25391" />
+                                <display value="ANALYSIS" />
+                            </coding>
+                        </concept>
+                    </type>
+                    <organization>
+                        <reference value="Organization/618054084" />
+                    </organization>
+                    <organization>
+                        <reference value="Organization/985052076" />
+                    </organization>
+                    <organization>
+                        <reference value="Organization/341970073" />
+                    </organization>
+                    <organization>
+                        <reference value="Organization/936889401" />
+                    </organization>
+                </operation>
+                <operation>
+                    <type>
+                        <concept>
+                            <coding>
+                                <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
+                                <code value="C43360" />
+                                <display value="MANUFACTURE" />
+                            </coding>
+                        </concept>
+                    </type>
+                    <organization>
+                        <reference value="Organization/985052076" />
+                    </organization>
+                    <organization>
+                        <reference value="Organization/341970073" />
+                    </organization>
+                    <organization>
+                        <reference value="Organization/936889401" />
+                    </organization>
+                </operation>
+                <operation>
+                    <type>
+                        <concept>
+                            <coding>
+                                <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
+                                <code value="C84731" />
+                                <display value="PACK" />
+                            </coding>
+                        </concept>
+                    </type>
+                    <organization>
+                        <reference value="Organization/618054084" />
+                    </organization>
+                    <organization>
+                        <reference value="Organization/341970073" />
+                    </organization>
+                </operation>
+                <operation>
+                    <type>
+                        <concept>
+                            <coding>
+                                <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
+                                <code value="C84732" />
+                                <display value="LABEL" />
+                            </coding>
+                        </concept>
+                    </type>
+                    <organization>
+                        <reference value="Organization/134489525" />
+                    </organization>
+                </operation>
             </MedicinalProductDefinition>
         </resource>
     </entry>
@@ -6556,43 +6561,43 @@
                     <part>
                         <part value="palbociclib" />
                         <type>
-                          <coding>
-                            <system value="http://ncit.nci.nih.gov" />
-                            <code value="C71898" />
-                          </coding>
-                          <text value="Proprietary Name" />
+                            <coding>
+                                <system value="http://ncit.nci.nih.gov" />
+                                <code value="C71898" />
+                            </coding>
+                            <text value="Proprietary Name" />
                         </type>
-                      </part>
-                      <part>
+                    </part>
+                    <part>
                         <part value="palbociclib" />
                         <type>
-                          <coding>
-                            <system value="http://ncit.nci.nih.gov" />
-                            <code value="C3273150" />
-                          </coding>
-                          <text value="NONPROPRIETARY" />
+                            <coding>
+                                <system value="http://ncit.nci.nih.gov" />
+                                <code value="C3273150" />
+                            </coding>
+                            <text value="NONPROPRIETARY" />
                         </type>
-                      </part>
-                      <part>
+                    </part>
+                    <part>
                         <part value="100 mg" />
                         <type>
-                          <coding>
-                            <system value="http://ncit.nci.nih.gov" />
-                            <code value="220000000004" />
-                          </coding>
-                          <text value="Strength part" />
+                            <coding>
+                                <system value="http://ncit.nci.nih.gov" />
+                                <code value="220000000004" />
+                            </coding>
+                            <text value="Strength part" />
                         </type>
-                      </part>
-                      <part>
+                    </part>
+                    <part>
                         <part value="CAPSULE" />
                         <type>
-                          <coding>
-                            <system value="http://ncit.nci.nih.gov" />
-                            <code value="C25158" />
-                            <display value="Pharmaceutical dose form part" />
-                          </coding>
+                            <coding>
+                                <system value="http://ncit.nci.nih.gov" />
+                                <code value="C25158" />
+                                <display value="Pharmaceutical dose form part" />
+                            </coding>
                         </type>
-                      </part>
+                    </part>
                     <countryLanguage>
                         <country>
                             <coding>
@@ -6610,6 +6615,80 @@
                         </language>
                     </countryLanguage>
                 </name>
+                <operation>
+                    <type>
+                        <concept>
+                            <coding>
+                                <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
+                                <code value="C25391" />
+                                <display value="ANALYSIS" />
+                            </coding>
+                        </concept>
+                    </type>
+                    <organization>
+                        <reference value="Organization/618054084" />
+                    </organization>
+                    <organization>
+                        <reference value="Organization/985052076" />
+                    </organization>
+                    <organization>
+                        <reference value="Organization/341970073" />
+                    </organization>
+                    <organization>
+                        <reference value="Organization/936889401" />
+                    </organization>
+                </operation>
+                <operation>
+                    <type>
+                        <concept>
+                            <coding>
+                                <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
+                                <code value="C43360" />
+                                <display value="MANUFACTURE" />
+                            </coding>
+                        </concept>
+                    </type>
+                    <organization>
+                        <reference value="Organization/985052076" />
+                    </organization>
+                    <organization>
+                        <reference value="Organization/341970073" />
+                    </organization>
+                    <organization>
+                        <reference value="Organization/936889401" />
+                    </organization>
+                </operation>
+                <operation>
+                    <type>
+                        <concept>
+                            <coding>
+                                <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
+                                <code value="C84731" />
+                                <display value="PACK" />
+                            </coding>
+                        </concept>
+                    </type>
+                    <organization>
+                        <reference value="Organization/618054084" />
+                    </organization>
+                    <organization>
+                        <reference value="Organization/341970073" />
+                    </organization>
+                </operation>
+                <operation>
+                    <type>
+                        <concept>
+                            <coding>
+                                <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
+                                <code value="C84732" />
+                                <display value="LABEL" />
+                            </coding>
+                        </concept>
+                    </type>
+                    <organization>
+                        <reference value="Organization/134489525" />
+                    </organization>
+                </operation>
             </MedicinalProductDefinition>
         </resource>
     </entry>
@@ -6670,43 +6749,43 @@
                     <part>
                         <part value="palbociclib" />
                         <type>
-                          <coding>
-                            <system value="http://ncit.nci.nih.gov" />
-                            <code value="C71898" />
-                          </coding>
-                          <text value="Proprietary Name" />
+                            <coding>
+                                <system value="http://ncit.nci.nih.gov" />
+                                <code value="C71898" />
+                            </coding>
+                            <text value="Proprietary Name" />
                         </type>
-                      </part>
-                      <part>
+                    </part>
+                    <part>
                         <part value="palbociclib" />
                         <type>
-                          <coding>
-                            <system value="http://ncit.nci.nih.gov" />
-                            <code value="C3273150" />
-                          </coding>
-                          <text value="NONPROPRIETARY" />
+                            <coding>
+                                <system value="http://ncit.nci.nih.gov" />
+                                <code value="C3273150" />
+                            </coding>
+                            <text value="NONPROPRIETARY" />
                         </type>
-                      </part>
-                      <part>
+                    </part>
+                    <part>
                         <part value="125 mg" />
                         <type>
-                          <coding>
-                            <system value="http://ncit.nci.nih.gov" />
-                            <code value="220000000004" />
-                          </coding>
-                          <text value="Strength part" />
+                            <coding>
+                                <system value="http://ncit.nci.nih.gov" />
+                                <code value="220000000004" />
+                            </coding>
+                            <text value="Strength part" />
                         </type>
-                      </part>
-                      <part>
+                    </part>
+                    <part>
                         <part value="CAPSULE" />
                         <type>
-                          <coding>
-                            <system value="http://ncit.nci.nih.gov" />
-                            <code value="C25158" />
-                            <display value="Pharmaceutical dose form part" />
-                          </coding>
+                            <coding>
+                                <system value="http://ncit.nci.nih.gov" />
+                                <code value="C25158" />
+                                <display value="Pharmaceutical dose form part" />
+                            </coding>
                         </type>
-                      </part>
+                    </part>
                     <countryLanguage>
                         <country>
                             <coding>
@@ -6724,6 +6803,80 @@
                         </language>
                     </countryLanguage>
                 </name>
+                <operation>
+                    <type>
+                        <concept>
+                            <coding>
+                                <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
+                                <code value="C25391" />
+                                <display value="ANALYSIS" />
+                            </coding>
+                        </concept>
+                    </type>
+                    <organization>
+                        <reference value="Organization/618054084" />
+                    </organization>
+                    <organization>
+                        <reference value="Organization/985052076" />
+                    </organization>
+                    <organization>
+                        <reference value="Organization/341970073" />
+                    </organization>
+                    <organization>
+                        <reference value="Organization/936889401" />
+                    </organization>
+                </operation>
+                <operation>
+                    <type>
+                        <concept>
+                            <coding>
+                                <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
+                                <code value="C43360" />
+                                <display value="MANUFACTURE" />
+                            </coding>
+                        </concept>
+                    </type>
+                    <organization>
+                        <reference value="Organization/985052076" />
+                    </organization>
+                    <organization>
+                        <reference value="Organization/341970073" />
+                    </organization>
+                    <organization>
+                        <reference value="Organization/936889401" />
+                    </organization>
+                </operation>
+                <operation>
+                    <type>
+                        <concept>
+                            <coding>
+                                <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
+                                <code value="C84731" />
+                                <display value="PACK" />
+                            </coding>
+                        </concept>
+                    </type>
+                    <organization>
+                        <reference value="Organization/618054084" />
+                    </organization>
+                    <organization>
+                        <reference value="Organization/341970073" />
+                    </organization>
+                </operation>
+                <operation>
+                    <type>
+                        <concept>
+                            <coding>
+                                <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
+                                <code value="C84732" />
+                                <display value="LABEL" />
+                            </coding>
+                        </concept>
+                    </type>
+                    <organization>
+                        <reference value="Organization/134489525" />
+                    </organization>
+                </operation>
             </MedicinalProductDefinition>
         </resource>
     </entry>
@@ -7078,15 +7231,15 @@
         </resource>
     </entry>
     <entry>
-        <fullUrl value="PackagedProductDefinition/ppd75tabweek" />
+        <fullUrl value="PackagedProductDefinition/0069-0187-21" />
         <resource>
             <PackagedProductDefinition xmlns="http://hl7.org/fhir">
-                <id value="ppd75tabweek" />
+                <id value="0069-0187-21" />
                 <identifier>
                     <system value="http://hl7.org/fhir/sid/ndc" />
-                    <value value="NDC 0069-0187-07" />
+                    <value value="0069-0187-07" />
                 </identifier>
-                <name value="75 MG TABLET DOSE PACK" />
+                <name value="75 mg Capsule Bottle Label - 21 tablets" />
                 <type>
                     <coding>
                         <system value="http://ncit.nci.nih.gov" />
@@ -7094,45 +7247,53 @@
                         <display value="Drug Package" />
                     </coding>
                 </type>
-                <subject>
+                <packageFor>
                     <reference value="MedicinalProductDefinition/MPDPALBOCICLIB75" />
-                </subject>
-                <status>
-                    <coding>
-                        <system value="http://hl7.org/fhir/publication-status" />
-                        <code value="active" />
-                        <display value="Active" />
-                    </coding>
-                </status>
-                <statusDate value="2020-03-30" />
-                <containedItemQuantity>
-                    <value value="1" />
-                </containedItemQuantity>
-                <description value="7 in 1 DOSE PACK; Type 0: Not a Combination Product" />
+                </packageFor>
                 <marketingStatus>
-                    <coding>
-                        <system value="http://ncit.nci.nih.gov" />
-                        <code value="C53292" />
-                        <display value="Marketing" />
-                    </coding>
+                    <status>
+                        <coding>
+                            <system value="http://ncit.nci.nih.gov" />
+                            <code value="C53292" />
+                            <display value="Marketing" />
+                        </coding>
+                    </status>
+                    <dateRange>
+                        <start value="2015-02-03" />
+                    </dateRange>
                 </marketingStatus>
-                <copackagedIndicator value="false" />
+                <description value="NDC 0069-0187-21
+
+                Pfizer
+                
+                Ibrance®
+                (palbociclib)
+                capsules
+                
+                75 mg
+                
+                21 Capsules
+                
+                Rx only" />
                 <manufacturer>
-                    <reference value="Organization/pfizerpharmllc" />
+                    <reference value="Organization/985052076" />
                 </manufacturer>
                 <manufacturer>
-                    <reference value="Organization/pfizerireland" />
+                    <reference value="Organization/341970073" />
                 </manufacturer>
-                <package>
+                <manufacturer>
+                    <reference value="Organization/936889401" />
+                </manufacturer>
+                <packaging>
                     <identifier>
                         <system value="http://hl7.org/fhir/sid/ndc" />
-                        <value value="NDC 0069-0187-07" />
+                        <value value="NDC 0069-0187-21" />
                     </identifier>
                     <type>
                         <coding>
-                            <system value="http://ncit.nci.nih.gov" />
-                            <code value="C43192" />
-                            <display value="Dose Pack" />
+                            <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
+                            <code value="C43169" />
+                            <display value="BOTTLE" />
                         </coding>
                     </type>
                     <quantity value="1" />
@@ -7153,34 +7314,45 @@
                                 value="Store at 20°C to 25°C (68°F to 77°F); excursions permitted between 15°C to 30°C (59°F to 86°F) [see USP Controlled Room Temperature]. Store in the original blister pack." />
                         </specialPrecautionsForStorage>
                     </shelfLifeStorage>
-                    <manufacturer>
-                        <reference value="Organization/pfizerpharmllc" />
-                    </manufacturer>
-                    <manufacturer>
-                        <reference value="Organization/pfizerireland" />
-                    </manufacturer>
+                    <property>
+                        <type>
+                            <coding>
+                                <system value="http://hl7.org/fhir/us/spl/CodeSystem/codesystem-characteristicTypes" />
+                                <code value="SPLCMBPRDTP" />
+                            </coding>
+                        </type>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" /><code
+                                    value="C112160" />
+                                <display value="Type 0: Not a Combination Product" />
+                            </coding>
+                        </valueCodeableConcept>
+                    </property>
                     <containedItem>
                         <item>
                             <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB75" />
                         </item>
-                        <amountQuantity>
-                            <value value="7" />
-                        </amountQuantity>
+                        <amount>
+                            <value value="21" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="1" />
+                        </amount>
                     </containedItem>
-                </package>
+                </packaging>
             </PackagedProductDefinition>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="PackagedProductDefinition/PPD-PALBOCICLIB100-TAB-MONTH" />
+        <fullUrl value="PackagedProductDefinition/0069-0188-21" />
         <resource>
             <PackagedProductDefinition xmlns="http://hl7.org/fhir">
-                <id value="PPD-PALBOCICLIB100-TAB-MONTH" />
+                <id value="0069-0188-21" />
                 <identifier>
                     <system value="http://hl7.org/fhir/sid/ndc" />
                     <value value="NDC:0069-0188-03" />
                 </identifier>
-                <name value="100 MG TABLET DOSE PACK CARTON" />
+                <name value="100 mg Capsule Bottle Label - 21 capsules" />
                 <type>
                     <coding>
                         <system value="http://ncit.nci.nih.gov" />
@@ -7188,45 +7360,48 @@
                         <display value="Drug Package" />
                     </coding>
                 </type>
-                <subject>
+                <packageFor>
                     <reference value="MedicinalProductDefinition/MPDPALBOCICLIB100" />
-                </subject>
-                <status>
-                    <coding>
-                        <system value="http://hl7.org/fhir/publication-status" />
-                        <code value="active" />
-                        <display value="Active" />
-                    </coding>
-                </status>
-                <statusDate value="2020-03-30" />
-                <containedItemQuantity>
-                    <value value="1" />
-                </containedItemQuantity>
-                <description value="3 in 1 CARTON" />
+                </packageFor>
                 <marketingStatus>
-                    <coding>
-                        <system value="http://ncit.nci.nih.gov" />
-                        <code value="C53292" />
-                        <display value="Marketing" />
-                    </coding>
+                    <status>
+                        <coding>
+                            <system value="http://ncit.nci.nih.gov" />
+                            <code value="C53292" />
+                            <display value="Marketing" />
+                        </coding>
+                    </status>
+                    <dateRange>
+                        <start value="2015-02-03" />
+                    </dateRange>
                 </marketingStatus>
-                <copackagedIndicator value="false" />
+                <description value="NDC 0069-0188-21
+
+                Pfizer
+                
+                Ibrance®
+                (palbociclib)
+                capsules
+                
+                100 mg
+                
+                21 Capsules" />
                 <manufacturer>
-                    <reference value="Organization/pfizerpharmllc" />
+                    <reference value="Organization/618054084" />
                 </manufacturer>
                 <manufacturer>
-                    <reference value="Organization/pfizerireland" />
+                    <reference value="Organization/341970073" />
                 </manufacturer>
-                <package>
+                <packaging>
                     <identifier>
                         <system value="http://hl7.org/fhir/sid/ndc" />
-                        <value value="NDC:0069-0188-03" />
+                        <value value="NDC:0069-0188-21" />
                     </identifier>
                     <type>
                         <coding>
-                            <system value="http://ncit.nci.nih.gov" />
-                            <code value="C43182" />
-                            <display value="Carton" />
+                            <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
+                            <code value="C43169" />
+                            <display value="BOTTLE" />
                         </coding>
                     </type>
                     <quantity value="1" />
@@ -7247,71 +7422,88 @@
                                 value="Store at 20°C to 25°C (68°F to 77°F); excursions permitted between 15°C to 30°C (59°F to 86°F) [see USP Controlled Room Temperature]. Store in the original blister pack." />
                         </specialPrecautionsForStorage>
                     </shelfLifeStorage>
-                    <manufacturer>
-                        <reference value="Organization/pfizerpharmllc" />
-                    </manufacturer>
-                    <manufacturer>
-                        <reference value="Organization/pfizerireland" />
-                    </manufacturer>
+                    <property>
+                        <type>
+                            <coding>
+                                <system value="http://hl7.org/fhir/us/spl/CodeSystem/codesystem-characteristicTypes" />
+                                <code value="SPLCMBPRDTP" />
+                            </coding>
+                        </type>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" /><code
+                                    value="C112160" />
+                                <display value="Type 0: Not a Combination Product" />
+                            </coding>
+                        </valueCodeableConcept>
+                    </property>
                     <containedItem>
                         <item>
-                            <reference value="PackagedProductDefinition/PPD-PALBOCICLIB100-TAB-WEEK" />
+                            <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB100" />
                         </item>
-                        <amountQuantity>
-                            <value value="3" />
-                        </amountQuantity>
+                        <amount>
+                            <value value="21" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="1" />
+                        </amount>
                     </containedItem>
-                </package>
+                </packaging>
             </PackagedProductDefinition>
         </resource>
     </entry>
     <entry>
-        <fullUrl value="PackagedProductDefinition/PPD-PALBOCICLIB100-TAB-WEEK" />
+        <fullUrl value="PackagedProductDefinition/0069-0189-21" />
         <resource>
             <PackagedProductDefinition xmlns="http://hl7.org/fhir">
-                <id value="PPD-PALBOCICLIB100-TAB-WEEK" />
+                <id value="0069-0189-21" />
                 <identifier>
                     <system value="http://hl7.org/fhir/sid/ndc" />
                     <value value="NDC:0069-0188-07" />
                 </identifier>
-                <name value="100 MG TABLET DOSE PACK" />
+                <name value="125 mg Capsule Bottle Label - 21 capsules" />
                 <type>
                     <coding>
-                        <system value="http://ncit.nci.nih.gov" />
-                        <code value="C43233" />
-                        <display value="Drug Package" />
+                        <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" />
+                        <code value="C43169" />
+                        <display value="BOTTLE" />
                     </coding>
                 </type>
-                <subject>
+                <packageFor>
                     <reference value="MedicinalProductDefinition/MPDPALBOCICLIB100" />
-                </subject>
-                <status>
-                    <coding>
-                        <system value="http://hl7.org/fhir/publication-status" />
-                        <code value="active" />
-                        <display value="Active" />
-                    </coding>
-                </status>
-                <statusDate value="2020-03-30" />
-                <containedItemQuantity>
-                    <value value="1" />
-                </containedItemQuantity>
-                <description value="7 in 1 DOSE PACK; Type 0: Not a Combination Product" />
+                </packageFor>
                 <marketingStatus>
-                    <coding>
-                        <system value="http://ncit.nci.nih.gov" />
-                        <code value="C53292" />
-                        <display value="Marketing" />
-                    </coding>
+                    <status>
+                        <coding>
+                            <system value="http://ncit.nci.nih.gov" />
+                            <code value="C53292" />
+                            <display value="Marketing" />
+                        </coding>
+                    </status>
+                    <dateRange>
+                        <start value="2015-02-03" />
+                    </dateRange>
                 </marketingStatus>
-                <copackagedIndicator value="false" />
+                <description value="7 in 1 DOSE PACK; Type 0: Not a Combination Product" />
+                <description value="NDC 0069-0189-21
+
+                Pfizer
+                
+                Ibrance®
+                (palbociclib)
+                capsules
+                
+                125 mg
+                
+                21 Capsules
+                
+                Rx only" />
                 <manufacturer>
-                    <reference value="Organization/pfizerpharmllc" />
+                    <reference value="Organization/618054084" />
                 </manufacturer>
                 <manufacturer>
-                    <reference value="Organization/pfizerireland" />
+                    <reference value="Organization/341970073" />
                 </manufacturer>
-                <package>
+                <packaging>
                     <identifier>
                         <system value="http://hl7.org/fhir/sid/ndc" />
                         <value value="NDC:0069-0188-07" />
@@ -7341,209 +7533,32 @@
                                 value="Store at 20°C to 25°C (68°F to 77°F); excursions permitted between 15°C to 30°C (59°F to 86°F) [see USP Controlled Room Temperature]. Store in the original blister pack." />
                         </specialPrecautionsForStorage>
                     </shelfLifeStorage>
-                    <manufacturer>
-                        <reference value="Organization/pfizerpharmllc" />
-                    </manufacturer>
-                    <manufacturer>
-                        <reference value="Organization/pfizerireland" />
-                    </manufacturer>
+                    <property>
+                        <type>
+                            <coding>
+                                <system value="http://hl7.org/fhir/us/spl/CodeSystem/codesystem-characteristicTypes" />
+                                <code value="SPLCMBPRDTP" />
+                            </coding>
+                        </type>
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" /><code
+                                    value="C112160" />
+                                <display value="Type 0: Not a Combination Product" />
+                            </coding>
+                        </valueCodeableConcept>
+                    </property>
                     <containedItem>
                         <item>
                             <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB100" />
                         </item>
-                        <amountQuantity>
-                            <value value="7" />
-                        </amountQuantity>
+                        <amount>
+                            <value value="21" />
+                            <system value="http://unitsofmeasure.org" />
+                            <code value="1" />
+                        </amount>
                     </containedItem>
-                </package>
-            </PackagedProductDefinition>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="PackagedProductDefinition/PPD-PALBOCICLIB125-TAB-MONTH" />
-        <resource>
-            <PackagedProductDefinition xmlns="http://hl7.org/fhir">
-                <id value="PPD-PALBOCICLIB125-TAB-MONTH" />
-                <identifier>
-                    <system value="http://hl7.org/fhir/sid/ndc" />
-                    <value value="NDC:0069-0189-03" />
-                </identifier>
-                <name value="125 MG TABLET DOSE PACK CARTON" />
-                <type>
-                    <coding>
-                        <system value="http://ncit.nci.nih.gov" />
-                        <code value="C43233" />
-                        <display value="Drug Package" />
-                    </coding>
-                </type>
-                <subject>
-                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB125" />
-                </subject>
-                <status>
-                    <coding>
-                        <system value="http://hl7.org/fhir/publication-status" />
-                        <code value="active" />
-                        <display value="Active" />
-                    </coding>
-                </status>
-                <statusDate value="2020-03-30" />
-                <containedItemQuantity>
-                    <value value="1" />
-                </containedItemQuantity>
-                <description value="3 in 1 CARTON" />
-                <marketingStatus>
-                    <coding>
-                        <system value="http://ncit.nci.nih.gov" />
-                        <code value="C53292" />
-                        <display value="Marketing" />
-                    </coding>
-                </marketingStatus>
-                <copackagedIndicator value="false" />
-                <manufacturer>
-                    <reference value="Organization/pfizerpharmllc" />
-                </manufacturer>
-                <manufacturer>
-                    <reference value="Organization/pfizerireland" />
-                </manufacturer>
-                <package>
-                    <identifier>
-                        <system value="http://hl7.org/fhir/sid/ndc" />
-                        <value value="NDC:0069-0189-03" />
-                    </identifier>
-                    <type>
-                        <coding>
-                            <system value="http://ncit.nci.nih.gov" />
-                            <code value="C43182" />
-                            <display value="Carton" />
-                        </coding>
-                    </type>
-                    <quantity value="1" />
-                    <shelfLifeStorage>
-                        <periodQuantity>
-                            <value value="48" />
-                            <unit value="mo" />
-                            <system value="https://unitsofmeasure.org" />
-                            <code value="mo" />
-                        </periodQuantity>
-                        <specialPrecautionsForStorage>
-                            <coding>
-                                <system value="http://ncit.nci.nih.gov" />
-                                <code value="C101707" />
-                                <display value="Recommended Storage Temperature" />
-                            </coding>
-                            <text
-                                value="Store at 20°C to 25°C (68°F to 77°F); excursions permitted between 15°C to 30°C (59°F to 86°F) [see USP Controlled Room Temperature]. Store in the original blister pack." />
-                        </specialPrecautionsForStorage>
-                    </shelfLifeStorage>
-                    <manufacturer>
-                        <reference value="Organization/pfizerpharmllc" />
-                    </manufacturer>
-                    <manufacturer>
-                        <reference value="Organization/pfizerireland" />
-                    </manufacturer>
-                    <containedItem>
-                        <item>
-                            <reference value="PackagedProductDefinition/PPD-PALBOCICLIB125-TAB-WEEK" />
-                        </item>
-                        <amountQuantity>
-                            <value value="3" />
-                        </amountQuantity>
-                    </containedItem>
-                </package>
-            </PackagedProductDefinition>
-        </resource>
-    </entry>
-    <entry>
-        <fullUrl value="PackagedProductDefinition/PPD-PALBOCICLIB125-TAB-WEEK" />
-        <resource>
-            <PackagedProductDefinition xmlns="http://hl7.org/fhir">
-                <id value="PPD-PALBOCICLIB125-TAB-WEEK" />
-                <identifier>
-                    <system value="http://hl7.org/fhir/sid/ndc" />
-                    <value value="NDC:0069-0189-07" />
-                </identifier>
-                <name value="125 MG TABLET DOSE PACK" />
-                <type>
-                    <coding>
-                        <system value="http://ncit.nci.nih.gov" />
-                        <code value="C43233" />
-                        <display value="Drug Package" />
-                    </coding>
-                </type>
-                <subject>
-                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB125" />
-                </subject>
-                <status>
-                    <coding>
-                        <system value="http://hl7.org/fhir/publication-status" />
-                        <code value="active" />
-                        <display value="Active" />
-                    </coding>
-                </status>
-                <statusDate value="2020-03-30" />
-                <containedItemQuantity>
-                    <value value="1" />
-                </containedItemQuantity>
-                <description value="7 in 1 DOSE PACK; Type 0: Not a Combination Product" />
-                <marketingStatus>
-                    <coding>
-                        <system value="http://ncit.nci.nih.gov" />
-                        <code value="C53292" />
-                        <display value="Marketing" />
-                    </coding>
-                </marketingStatus>
-                <copackagedIndicator value="false" />
-                <manufacturer>
-                    <reference value="Organization/pfizerpharmllc" />
-                </manufacturer>
-                <manufacturer>
-                    <reference value="Organization/pfizerireland" />
-                </manufacturer>
-                <package>
-                    <identifier>
-                        <system value="http://hl7.org/fhir/sid/ndc" />
-                        <value value="NDC:0069-0189-07" />
-                    </identifier>
-                    <type>
-                        <coding>
-                            <system value="http://ncit.nci.nih.gov" />
-                            <code value="C43192" />
-                            <display value="Dose Pack" />
-                        </coding>
-                    </type>
-                    <quantity value="1" />
-                    <shelfLifeStorage>
-                        <periodQuantity>
-                            <value value="48" />
-                            <unit value="mo" />
-                            <system value="https://unitsofmeasure.org" />
-                            <code value="mo" />
-                        </periodQuantity>
-                        <specialPrecautionsForStorage>
-                            <coding>
-                                <system value="http://ncit.nci.nih.gov" />
-                                <code value="C101707" />
-                                <display value="Recommended Storage Temperature" />
-                            </coding>
-                            <text
-                                value="Store at 20°C to 25°C (68°F to 77°F); excursions permitted between 15°C to 30°C (59°F to 86°F) [see USP Controlled Room Temperature]. Store in the original blister pack." />
-                        </specialPrecautionsForStorage>
-                    </shelfLifeStorage>
-                    <manufacturer>
-                        <reference value="Organization/pfizerpharmllc" />
-                    </manufacturer>
-                    <manufacturer>
-                        <reference value="Organization/pfizerireland" />
-                    </manufacturer>
-                    <containedItem>
-                        <item>
-                            <reference value="ManufacturedItemDefinition/MID-PALBOCICLIB125" />
-                        </item>
-                        <amountQuantity>
-                            <value value="7" />
-                        </amountQuantity>
-                    </containedItem>
-                </package>
+                </packaging>
             </PackagedProductDefinition>
         </resource>
     </entry>
@@ -7588,11 +7603,8 @@
                     <end value="" />
                 </validityPeriod>
                 <holder>
-                    <reference value="Organization/pfizerlabs" />
+                    <reference value="Organization/134489525" />
                 </holder>
-                <regulator>
-                    <reference value="Organization/fda" />
-                </regulator>
             </RegulatedAuthorization>
         </resource>
     </entry>
@@ -7637,11 +7649,8 @@
                     <end value="" />
                 </validityPeriod>
                 <holder>
-                    <reference value="Organization/pfizerlabs" />
+                    <reference value="Organization/134489525" />
                 </holder>
-                <regulator>
-                    <reference value="Organization/fda" />
-                </regulator>
             </RegulatedAuthorization>
         </resource>
     </entry>
@@ -7686,11 +7695,8 @@
                     <end value="" />
                 </validityPeriod>
                 <holder>
-                    <reference value="Organization/pfizerlabs" />
+                    <reference value="Organization/134489525" />
                 </holder>
-                <regulator>
-                    <reference value="Organization/fda" />
-                </regulator>
             </RegulatedAuthorization>
         </resource>
     </entry>
