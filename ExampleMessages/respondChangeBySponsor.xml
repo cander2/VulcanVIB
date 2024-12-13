@@ -41,17 +41,17 @@
 				<intent value="order" />
 				<code>
 					<coding>
-						<system value="TEMP-https://www.accessdata.fda.gov/eCTD" />
+						<system value="https://www.accessdata.fda.gov/eCTD-temp" />
 						<code value="fdaat1" />
 						<display value="New Drug Application (NDA)" />
 					</coding>
 					<coding>
-						<system value="TEMP-https://www.accessdata.fda.gov/eCTD" />
+						<system value="https://www.accessdata.fda.gov/eCTD-temp" />
 						<code value="fdast1" />
 						<display value="Original Application" />
 					</coding>
 					<coding>
-						<system value="TEMP-https://www.accessdata.fda.gov/eCTD" />
+						<system value="https://www.accessdata.fda.gov/eCTD-temp" />
 						<code value="fdasst5" />
 						<display value="Resubmission" />
 					</coding>
@@ -87,11 +87,11 @@
 				<input>
 					<type>
 						<coding>
-							<system value="oid:2.16.840.1.113881.6.1" />
+							<system value="http://loinc.org" />
 							<code value="34391-3" />
-							<display value="HUMAN PRESCRIPTION DRUG LABEL" />
+							<display value="FDA product label Human prescription drug label" />
 						</coding>
-						<text value="Annotated HUMAN PRESCRIPTION DRUG LABEL" />
+						<text value="Annotated FDA product label Human prescription drug label" />
 					</type>
 					<valueReference>
 						<reference value="Bundle/bundle-ibrance75-100-125" />
@@ -100,11 +100,11 @@
 				<input>
 					<type>
 						<coding>
-							<system value="oid:2.16.840.1.113881.6.1" />
+							<system value="http://loinc.org" />
 							<code value="34391-3" />
-							<display value="HUMAN PRESCRIPTION DRUG LABEL" />
+							<display value="FDA product label Human prescription drug label" />
 						</coding>
-						<text value="HUMAN PRESCRIPTION DRUG LABEL" />
+						<text value="FDA product label Human prescription drug label" />
 					</type>
 					<valueReference>
 						<reference value="Bundle/bundle-ibrance75-100-125" />
@@ -130,18 +130,18 @@
 				<intent value="order" />
 				<code>
 					<coding>
-						<system value="TEMP-https://www.accessdata.fda.gov/eCTD" />
+						<system value="https://www.accessdata.fda.gov/eCTD-temp" />
 						<code value="fdaat1" />
 						<display value="New Drug Application (NDA)" />
 					</coding>
 					<coding>
-						<system value="TEMP-https://www.accessdata.fda.gov/eCTD" />
+						<system value="https://www.accessdata.fda.gov/eCTD-temp" />
 						<code value="fdast1" />
 						<display value="Original Application" />
 					</coding>
 					<coding>
 						<!-- the code used here is used to indicate that this Task is asking for changes to the last label submission -->
-						<system value="TEMP-https://www.accessdata.fda.gov/eCTD" />
+						<system value="https://www.accessdata.fda.gov/eCTD-temp" />
 						<code value="fdasst7" />
 						<display value="Correspondence" />
 					</coding>
@@ -174,11 +174,11 @@
 				<input>
 					<type>
 						<coding>
-							<system value="oid:2.16.840.1.113881.6.1" />
+							<system value="http://loinc.org" />
 							<code value="34391-3" />
-							<display value="HUMAN PRESCRIPTION DRUG LABEL" />
+							<display value="FDA product label Human prescription drug label" />
 						</coding>
-						<text value="HUMAN PRESCRIPTION DRUG LABEL" />
+						<text value="FDA product label Human prescription drug label" />
 					</type>
 					<valueReference>
 						<!-- the document bunder this task references contains the comments and modifications made by the HA -->
