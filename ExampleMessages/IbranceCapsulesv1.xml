@@ -4577,7 +4577,14 @@
                         <extension url="http://hl7.org/fhir/us/spl/StructureDefinition/sectionLinkId">
                             <valueString value="ID_8d706147-d726-49bd-a7da-1fbbb568fac3" />
                         </extension>
-                        <code><coding><system value="http://loinc.org" /><code value="44425-7" /><display value="STORAGE AND HANDLING SECTION" /></coding></code><text>
+                        <code>
+                            <coding>
+                                <system value="http://loinc.org" />
+                                <code value="44425-7" />
+                                <display value="STORAGE AND HANDLING SECTION" />
+                            </coding>
+                        </code>
+                        <text>
                             <status value="additional" />
                             <div xmlns="http://www.w3.org/1999/xhtml">
                                 <div style="narrative">
@@ -7698,6 +7705,504 @@
                     <reference value="Organization/134489525" />
                 </holder>
             </RegulatedAuthorization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="ClinicalUseDefinition/1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p" />
+        <resource>
+            <ClinicalUseDefinition>
+                <id value="1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p" />
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-interaction-uv-epi" />
+                </meta>
+                <identifier>
+                    <use value="official" />
+                    <system value="https://example.com/system" />
+                    <value value="CYP3AInhibitors001" />
+                </identifier>
+                <type value="interaction" />
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB75" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB100" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB125" />
+                </subject>
+                <interaction>
+                    <interactant>
+                        <itemCodeableConcept>
+                            <coding>
+                                <system value="https://example.com/system" />
+                                <code value="CYP3AInhibitor" />
+                                <display value="CYP3A Inhibitor" />
+                            </coding>
+                        </itemCodeableConcept>
+                    </interactant>
+                </interaction>
+            </ClinicalUseDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="ClinicalUseDefinition/2b3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7q" />
+        <resource>
+            <ClinicalUseDefinition>
+                <id value="2b3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7q" />
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-interaction-uv-epi" />
+                </meta>
+                <identifier>
+                    <use value="official" />
+                    <system value="https://example.com/system" />
+                    <value value="CYP3AInducers002" />
+                </identifier>
+                <type value="interaction" />
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB75" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB100" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB125" />
+                </subject>
+                <interaction>
+                    <interactant>
+                        <itemCodeableConcept>
+                            <coding>
+                                <system value="https://example.com/system" />
+                                <code value="CYP3AInducer" />
+                                <display value="CYP3A Inducer" />
+                            </coding>
+                        </itemCodeableConcept>
+                    </interactant>
+                </interaction>
+            </ClinicalUseDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="ClinicalUseDefinition/3c4d5e6f-7g8h-9i0j-1k2l-3m4n5o6p7q8r" />
+        <resource>
+            <ClinicalUseDefinition>
+                <id value="3c4d5e6f-7g8h-9i0j-1k2l-3m4n5o6p7q8r" />
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-interaction-uv-epi" />
+                </meta>
+                <identifier>
+                    <use value="official" />
+                    <system value="https://example.com/system" />
+                    <value value="Midazolam003" />
+                </identifier>
+                <type value="interaction" />
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB75" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB100" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB125" />
+                </subject>
+                <interaction>
+                    <interactant>
+                        <itemCodeableConcept>
+                            <coding>
+                                <system value="https://precision.fda.gov/uniisearch/srs/unii/R60L0SM5BC" />
+                                <code value="R60L0SM5BC" />
+                                <display value="Midazolam" />
+                            </coding>
+                        </itemCodeableConcept>
+                    </interactant>
+                </interaction>
+            </ClinicalUseDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="ClinicalUseDefinition/4d5e6f7g-8h9i-0j1k-2l3m-4n5o6p7q8r9s" />
+        <resource>
+            <ClinicalUseDefinition>
+                <id value="4d5e6f7g-8h9i-0j1k-2l3m-4n5o6p7q8r9s" />
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-indication-uv-epi" />
+                </meta>
+                <identifier>
+                    <use value="official" />
+                    <system value="https://example.com/system" />
+                    <value value="HRHER2NegativeBreastCancer001" />
+                </identifier>
+                <type value="indication" />
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB75" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB100" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB125" />
+                </subject>
+                <indication>
+                    <code>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="444615000" />
+                            <display value="Hormone receptor-positive, HER2-negative advanced or metastatic breast cancer" />
+                        </coding>
+                    </code>
+                </indication>
+            </ClinicalUseDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="ClinicalUseDefinition/6f7g8h9i-0j1k-2l3m-4n5o-6p7q8r9s0t1u" />
+        <resource>
+            <ClinicalUseDefinition>
+                <id value="6f7g8h9i-0j1k-2l3m-4n5o-6p7q8r9s0t1u" />
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-warning-uv-epi" />
+                </meta>
+                <identifier>
+                    <use value="official" />
+                    <system value="https://example.com/system" />
+                    <value value="Neutropenia001" />
+                </identifier>
+                <type value="warning" />
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB75" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB100" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB125" />
+                </subject>
+                <warning>
+                    <code>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="703938007" />
+                            <display value="Neutropenia" />
+                        </coding>
+                    </code>
+                    <description value="Neutropenia was the most frequently reported adverse reaction in PALOMA-2 with an incidence of 80% and PALOMA-3 with an incidence of 83%." />
+                </warning>
+            </ClinicalUseDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="ClinicalUseDefinition/7g8h9i0j-1k2l-3m4n-5o6p-7q8r9s0t1u2v" />
+        <resource>
+            <ClinicalUseDefinition>
+                <id value="7g8h9i0j-1k2l-3m4n-5o6p-7q8r9s0t1u2v" />
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-warning-uv-epi" />
+                </meta>
+                <identifier>
+                    <use value="official" />
+                    <system value="https://example.com/system" />
+                    <value value="ILD002" />
+                </identifier>
+                <type value="warning" />
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB75" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB100" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB125" />
+                </subject>
+                <warning>
+                    <code>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="67782005" />
+                            <display value="Interstitial lung disease" />
+                        </coding>
+                    </code>
+                    <description value="Severe, life-threatening, or fatal interstitial lung disease (ILD) and/or pneumonitis can occur in patients treated with cyclin-dependent kinase 4/6 (CDK4/6) inhibitors, including IBRANCE when taken in combination with endocrine therapy." />
+                </warning>
+            </ClinicalUseDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="ClinicalUseDefinition/8h9i0j1k-2l3m-4n5o-6p7q-8r9s0t1u2v3w" />
+        <resource>
+            <ClinicalUseDefinition>
+                <id value="8h9i0j1k-2l3m-4n5o-6p7q-8r9s0t1u2v3w" />
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-warning-uv-epi" />
+                </meta>
+                <identifier>
+                    <use value="official" />
+                    <system value="https://example.com/system" />
+                    <value value="EmbryoFetalToxicity003" />
+                </identifier>
+                <type value="warning" />
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB75" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB100" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB125" />
+                </subject>
+                <warning>
+                    <code>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="73761001" />
+                            <display value="Embryo-Fetal Toxicity" />
+                        </coding>
+                    </code>
+                    <description value="Based on findings from animal studies and its mechanism of action, IBRANCE can cause fetal harm when administered to a pregnant woman." />
+                </warning>
+            </ClinicalUseDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="ClinicalUseDefinition/1k2l3m4n-5o6p-7q8r-9s0t-1u2v3w4x5y6z" />
+        <resource>
+            <ClinicalUseDefinition>
+                <id value="1k2l3m4n-5o6p-7q8r-9s0t-1u2v3w4x5y6z" />
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirable-effect-uv-epi" />
+                </meta>
+                <identifier>
+                    <use value="official" />
+                    <system value="https://example.com/system" />
+                    <value value="Anemia003" />
+                </identifier>
+                <type value="undesirable-effect" />
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB75" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB100" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB125" />
+                </subject>
+                <undesirableEffect>
+                    <classification>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="271737000" />
+                            <display value="Anemia" />
+                        </coding>
+                    </classification>
+                    <frequency value="≥10%" />
+                </undesirableEffect>
+            </ClinicalUseDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="ClinicalUseDefinition/2l3m4n5o-6p7q-8r9s-0t1u-2v3w4x5y6z7a" />
+        <resource>
+            <ClinicalUseDefinition>
+                <id value="2l3m4n5o-6p7q-8r9s-0t1u-2v3w4x5y6z7a" />
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirable-effect-uv-epi" />
+                </meta>
+                <identifier>
+                    <use value="official" />
+                    <system value="https://example.com/system" />
+                    <value value="Thrombocytopenia004" />
+                </identifier>
+                <type value="undesirable-effect" />
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB75" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB100" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB125" />
+                </subject>
+                <undesirableEffect>
+                    <classification>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="302215000" />
+                            <display value="Thrombocytopenia" />
+                        </coding>
+                    </classification>
+                    <frequency value="≥10%" />
+                </undesirableEffect>
+            </ClinicalUseDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="ClinicalUseDefinition/2l3m4n5o-6p7q-8r9s-0t1u-2v3w4x5y6z7a" />
+        <resource>
+            <ClinicalUseDefinition>
+                <id value="2l3m4n5o-6p7q-8r9s-0t1u-2v3w4x5y6z7a" />
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirable-effect-uv-epi" />
+                </meta>
+                <identifier>
+                    <use value="official" />
+                    <system value="https://example.com/system" />
+                    <value value="Thrombocytopenia004" />
+                </identifier>
+                <type value="undesirable-effect" />
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB75" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB100" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB125" />
+                </subject>
+                <undesirableEffect>
+                    <classification>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="36225005" />
+                            <display value="Blood and lymphatic system disorders" />
+                        </coding>
+                    </classification>
+                    <symptomConditionEffect>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="302215000" />
+                            <display value="Thrombocytopenia" />
+                        </coding>
+                    </symptomConditionEffect>
+                    <frequency value="≥10%" />
+                </undesirableEffect>
+            </ClinicalUseDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="ClinicalUseDefinition/1k2l3m4n-5o6p-7q8r-9s0t-1u2v3w4x5y6z" />
+        <resource>
+            <ClinicalUseDefinition>
+                <id value="1k2l3m4n-5o6p-7q8r-9s0t-1u2v3w4x5y6z" />
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirable-effect-uv-epi" />
+                </meta>
+                <identifier>
+                    <use value="official" />
+                    <system value="https://example.com/system" />
+                    <value value="Anemia003" />
+                </identifier>
+                <type value="undesirable-effect" />
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB75" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB100" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB125" />
+                </subject>
+                <undesirableEffect>
+                    <classification>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="36225005" />
+                            <display value="Blood and lymphatic system disorders" />
+                        </coding>
+                    </classification>
+                    <symptomConditionEffect>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="271737000" />
+                            <display value="Anemia" />
+                        </coding>
+                    </symptomConditionEffect>
+                    <frequency value="≥10%" />
+                </undesirableEffect>
+            </ClinicalUseDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="ClinicalUseDefinition/0j1k2l3m-4n5o-6p7q-8r9s-0t1u2v3w4x5y" />
+        <resource>
+            <ClinicalUseDefinition>
+                <id value="0j1k2l3m-4n5o-6p7q-8r9s-0t1u2v3w4x5y" />
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirable-effect-uv-epi" />
+                </meta>
+                <identifier>
+                    <use value="official" />
+                    <system value="https://example.com/system" />
+                    <value value="Leukopenia002" />
+                </identifier>
+                <type value="undesirable-effect" />
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB75" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB100" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB125" />
+                </subject>
+                <undesirableEffect>
+                    <classification>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="36225005" />
+                            <display value="Blood and lymphatic system disorders" />
+                        </coding>
+                    </classification>
+                    <symptomConditionEffect>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="702760002" />
+                            <display value="Leukopenia" />
+                        </coding>
+                    </symptomConditionEffect>
+                    <frequency value="≥10%" />
+                </undesirableEffect>
+            </ClinicalUseDefinition>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="ClinicalUseDefinition/9i0j1k2l-3m4n-5o6p-7q8r-9s0t1u2v3w4x" />
+        <resource>
+            <ClinicalUseDefinition>
+                <id value="9i0j1k2l-3m4n-5o6p-7q8r-9s0t1u2v3w4x" />
+                <meta>
+                    <profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirable-effect-uv-epi" />
+                </meta>
+                <identifier>
+                    <use value="official" />
+                    <system value="https://example.com/system" />
+                    <value value="Neutropenia001" />
+                </identifier>
+                <type value="undesirable-effect" />
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB75" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB100" />
+                </subject>
+                <subject>
+                    <reference value="MedicinalProductDefinition/MPDPALBOCICLIB125" />
+                </subject>
+                <undesirableEffect>
+                    <classification>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="36225005" />
+                            <display value="Blood and lymphatic system disorders" />
+                        </coding>
+                    </classification>
+                    <symptomConditionEffect>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <code value="703938007" />
+                            <display value="Neutropenia" />
+                        </coding>
+                    </symptomConditionEffect>
+                    <frequency value="≥10%" />
+                </undesirableEffect>
+            </ClinicalUseDefinition>
         </resource>
     </entry>
 </Bundle>
