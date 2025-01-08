@@ -10,6 +10,7 @@
 				<eventCoding>
 					<display value="temp-string of VIB Demo Labeling" />
 				</eventCoding>
+				<!-- i4i: are sender and receiver reversed? -->
 				<destination>
 					<receiver>
 						<reference value="Organization/PfizerId" />
@@ -50,6 +51,7 @@
 						<code value="fdast1" />
 						<display value="Original Application" />
 					</coding>
+					<!-- i4i: why is this the same as the first <coding>? -->
 					<coding>
 						<system value="https://www.accessdata.fda.gov/eCTD-temp" />
 						<code value="fdaat1" />
