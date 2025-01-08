@@ -21,6 +21,7 @@
 				<source>
 					<name value="VIB Demo" />
 				</source>
+				<!-- i4i: missing a <response> tag with an identifier that points to the message ID of the change request (previous message - "initialSubmissionBySponsor.xml") -->
 			</MessageHeader>
 		</resource>
 	</entry>
@@ -61,6 +62,7 @@
 				<description value="Please make a change for: Supplemental new drug application (sNDA) to add information to section XX and remove information from section YY" />
 				<focus>
 					<!-- this is a reference to the initial submission Task in the initialSubmissionBySponsor message -->
+					<!-- i4i: change the reference to use full URL -->
 					<reference value="Task/bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
 				</focus>
 				<for>
@@ -79,6 +81,7 @@
 				</owner>
 				<reason>
 					<reference>
+						<!-- i4i: change the reference to use full URL -->
 						<reference value="Task/bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
 					</reference>
 				</reason>
@@ -99,6 +102,7 @@
 			</Task>
 		</resource>
 	</entry>
+	<!-- i4i: remove second task entry -->
 	<entry>
 		<fullUrl value="Task/bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
 		<resource>
