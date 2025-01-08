@@ -21,6 +21,7 @@
 				<source>
 					<name value="VIB Demo" />
 				</source>
+				<!-- i4i: missing a <response> tag with an identifier that points to the message ID of the change request (previous message - "requestChangeByHA.xml") -->
 			</MessageHeader>
 		</resource>
 	</entry>
@@ -60,6 +61,7 @@
 				<description value="Please review the change made to: Supplemental new drug application (sNDA) to add information to section XX and remove information from section YY" />
 				<focus>
 					<!-- reference to the initial submission Task in the initialSubmissionBySponsor message-->
+					<!-- i4i: change the reference to use full URL -->
 					<reference value="Task/bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
 				</focus>
 				<for>
@@ -79,11 +81,13 @@
 				<reason>
 					<reference>
 						<!-- reference the Task ID in the last message received by the HA, in this case the requestChangeByHA -->
+						<!-- i4i: change the reference to use full URL -->
 						<reference value="Task/c21e0d58-af73-498f-8d93-717caf999048" />
 					</reference>
 				</reason>
 				<!-- two inputs are referenced here. One is to a bundle document with the clean copy of the label, another is to a bundle document with an annotated version of the label. -->
 				<!-- The two will be differentiated by the type. TBD -->
+				<!-- i4i: as discussed, only 1 input (annotated one) needed -->
 				<input>
 					<type>
 						<coding>
@@ -97,6 +101,7 @@
 						<reference value="Bundle/bundle-ibrance75-100-125" />
 					</valueReference>
 				</input>
+				<!-- i4i: remove this second <input> -->
 				<input>
 					<type>
 						<coding>
@@ -113,6 +118,7 @@
 			</Task>
 		</resource>
 	</entry>
+	<!-- i4i: remove second task entry -->
 	<entry>
 		<fullUrl value="Task/c21e0d58-af73-498f-8d93-717caf999048" />
 		<resource>
