@@ -21,6 +21,7 @@
 				<source>
 					<name value="VIB Demo" />
 				</source>
+				<!-- i4i: missing a <response> tag with an identifier that points to the message ID of the change request (previous message - "respondFinalSubmissionBySponsor.xml") -->
 			</MessageHeader>
 		</resource>
 	</entry>
@@ -61,6 +62,7 @@
 				<description value="Submission has received final approval." />
 				<focus>
 					<!-- this is a reference to the initial submission Task in the initialSubmissionBySponsor message -->
+					<!-- i4i: change the reference to use full URL -->
 					<reference value="Task/bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
 				</focus>
 				<for>
@@ -80,6 +82,7 @@
 				<reason>
 					<reference>
 						<!-- reference to the Task in the last sponsor message, in this case responsFinalSubmissionBySponsor -->
+						<!-- i4i: change the reference to use full URL -->
 						<reference value="Task/f5a1cd71-86a1-400b-b200-bcbd68cb7237" />
 					</reference>
 				</reason>
@@ -100,6 +103,7 @@
 			</Task>
 		</resource>
 	</entry>
+	<!-- i4i: remove second task entry -->
 	<entry>
 		<fullUrl value="Task/6751b6c0-385e-472e-bdf8-7350dfffb388" />
 		<resource>
@@ -176,6 +180,7 @@
 			</Task>
 		</resource>
 	</entry>
+	<!-- i4i: Is full Bundle needed for the final decision? -->
 	<entry>
 		<fullUrl value="Bundle/bundle-ibrance75-100-125" />
 		<resource>
