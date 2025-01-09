@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir https://hl7.org/fhir/fhir-single.xsd">
 	<id value="135fac62-5c38-43a1-8269-6a5b651d6050" />
+	<identifier> 
+		<system value="urn:example-org:fda.identifiers"/> 
+		<value value="35f23e97-328c-4eb7-8e94-34f478983e893"/> 
+	</identifier>
 	<type value="message" />
 	<entry>
 		<fullUrl value="MessageHeader/066d3fc7-cfea-4ce1-9487-8ad101872ea5" />
@@ -21,7 +25,13 @@
 				<source>
 					<name value="VIB Demo" />
 				</source>
-				<!-- i4i: missing a <response> tag with an identifier that points to the message ID of the change request (previous message - "respondChangeBySponsor.xml") -->
+				<response> 
+				  <identifier> 
+					<system value="urn:example-org:authoringTool.identifiers"/> 
+					<value value="35f23e97-328c-4eb7-8e94-34f478983e892"/> 
+				  </identifier>
+				  <code value="ok"/> 
+				</response> 
 			</MessageHeader>
 		</resource>
 	</entry>
@@ -63,7 +73,12 @@
 				<focus>
 					<!-- This is a reference to the initial submission Task in the initialSubmissionBySponsor message -->
 					<!-- i4i: change the reference to use full URL -->
-					<reference value="Task/bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
+					<reference value="https://epi-03.azurewebsites.net/Task/bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
+					<!-- adding identifier means the recipient system does not need to do a look-up just to know the Task identifier -->
+					<identifier>
+						<system value="http://example.com/system" />
+						<value value="bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
+					</identifier>
 				</focus>
 				<for>
 					<reference value="Organization/PfizerId" />
@@ -83,7 +98,12 @@
 					<reference>
 						<!-- this reference is to the previous Task submitted by the sponsor, in the case the respondChangeBySponsor message-->
 						<!-- i4i: change the reference to use full URL -->
-						<reference value="Task/f744a143-fe5b-498c-87b1-bbd14956be48" />
+						<reference value="https://epi-03.azurewebsites.net/Task/f744a143-fe5b-498c-87b1-bbd14956be48" />
+						<!-- identifier is a useful shortcut for navigating the chain of Task instances and identification -->
+						<identifier>
+							<system value="http://example.com/system" />
+							<value value="f744a143-fe5b-498c-87b1-bbd14956be48" />
+						</identifier>
 					</reference>
 				</reason>
 				<!-- only one input in this task, a clean copy of the label that was last submitted. -->

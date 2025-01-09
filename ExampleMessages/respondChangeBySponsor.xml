@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir https://hl7.org/fhir/fhir-single.xsd">
 	<id value="4a32a216-9f1c-4775-b4cf-f8d7415a3be6" />
+	<identifier> 
+		<system value="urn:example-org:authoringTool.identifiers"/> 
+		<value value="35f23e97-328c-4eb7-8e94-34f478983e892"/> 
+	</identifier>
 	<type value="message" />
 	<entry>
 		<fullUrl value="MessageHeader/a25a651b-b469-43b6-af75-6f39e5283a3d" />
@@ -21,7 +25,13 @@
 				<source>
 					<name value="VIB Demo" />
 				</source>
-				<!-- i4i: missing a <response> tag with an identifier that points to the message ID of the change request (previous message - "requestChangeByHA.xml") -->
+				<response> 
+				  <identifier> 
+					<system value="urn:example-org:fda.identifiers"/> 
+					<value value="35f23e97-328c-4eb7-8e94-34f478983e891"/> 
+				  </identifier>
+				  <code value="ok"/> 
+				</response> 
 			</MessageHeader>
 		</resource>
 	</entry>
@@ -62,7 +72,12 @@
 				<focus>
 					<!-- reference to the initial submission Task in the initialSubmissionBySponsor message-->
 					<!-- i4i: change the reference to use full URL -->
-					<reference value="Task/bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
+					<reference value="https://epi-03.azurewebsites.net/Task/bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
+					<!-- adding identifier means the recipient system does not need to do a look-up just to know the Task identifier -->
+					<identifier>
+						<system value="http://example.com/system" />
+						<value value="bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
+					</identifier>
 				</focus>
 				<for>
 					<reference value="Organization/PfizerId" />
@@ -82,7 +97,12 @@
 					<reference>
 						<!-- reference the Task ID in the last message received by the HA, in this case the requestChangeByHA -->
 						<!-- i4i: change the reference to use full URL -->
-						<reference value="Task/c21e0d58-af73-498f-8d93-717caf999048" />
+						<reference value="https://epi-03.azurewebsites.net/Task/c21e0d58-af73-498f-8d93-717caf999048" />
+						<!-- identifier is a useful shortcut for navigating the chain of Task instances and identification -->
+						<identifier>
+							<system value="http://example.com/system" />
+							<value value="c21e0d58-af73-498f-8d93-717caf999048" />
+						</identifier>
 					</reference>
 				</reason>
 				<!-- two inputs are referenced here. One is to a bundle document with the clean copy of the label, another is to a bundle document with an annotated version of the label. -->
@@ -101,8 +121,8 @@
 						<reference value="Bundle/bundle-ibrance75-100-125" />
 					</valueReference>
 				</input>
-				<!-- i4i: remove this second <input> -->
-				<input>
+				<!-- two complete document bundles could be used. The first one is referenced above as the annotated version. A second one could be referenced in the task as the clean version. Currently only one of the documents is present.-->
+				<!--input>
 					<type>
 						<coding>
 							<system value="http://loinc.org" />
@@ -114,88 +134,11 @@
 					<valueReference>
 						<reference value="Bundle/bundle-ibrance75-100-125" />
 					</valueReference>
-				</input>
+				</input-->
 			</Task>
 		</resource>
 	</entry>
-	<!-- i4i: remove second task entry -->
-	<entry>
-		<fullUrl value="Task/c21e0d58-af73-498f-8d93-717caf999048" />
-		<resource>
-			<Task>
-				<id value="c21e0d58-af73-498f-8d93-717caf999048" />
-				<identifier>
-					<system value="http://example.com/system" />
-					<value value="c21e0d58-af73-498f-8d93-717caf999048" />
-				</identifier>
-				<groupIdentifier>
-					<system value="http://example.com/system" />
-					<value value="NDA 212436" />
-				</groupIdentifier>
-				<status value="requested" />
-				<intent value="order" />
-				<code>
-					<coding>
-						<system value="https://www.accessdata.fda.gov/eCTD-temp" />
-						<code value="fdaat1" />
-						<display value="New Drug Application (NDA)" />
-					</coding>
-					<coding>
-						<system value="https://www.accessdata.fda.gov/eCTD-temp" />
-						<code value="fdast1" />
-						<display value="Original Application" />
-					</coding>
-					<coding>
-						<!-- the code used here is used to indicate that this Task is asking for changes to the last label submission -->
-						<system value="https://www.accessdata.fda.gov/eCTD-temp" />
-						<code value="fdasst7" />
-						<display value="Correspondence" />
-					</coding>
-					<text value="NDA Labeling Initial Submission FDA Correspondence" />
-				</code>
-				<description value="Please make a change for: Supplemental new drug application (sNDA) to add information to section XX and remove information from section YY" />
-				<focus>
-					<!-- this is a reference to the initial submission Task in the initialSubmissionBySponsor message -->
-					<reference value="Task/bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
-				</focus>
-				<for>
-					<reference value="Organization/PfizerId" />
-				</for>
-				<requester>
-					<reference value="Organization/PfizerId" />
-				</requester>
-				<requestedPerformer>
-					<reference>
-						<reference value="Organization/FDAID" />
-					</reference>
-				</requestedPerformer>
-				<owner>
-					<reference value="Organization/FDAID" />
-				</owner>
-				<reason>
-					<reference>
-						<reference value="Task/bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
-					</reference>
-				</reason>
-				<input>
-					<type>
-						<coding>
-							<system value="http://loinc.org" />
-							<code value="34391-3" />
-							<display value="FDA product label Human prescription drug label" />
-						</coding>
-						<text value="FDA product label Human prescription drug label" />
-					</type>
-					<valueReference>
-						<!-- the document bunder this task references contains the comments and modifications made by the HA -->
-						<reference value="Bundle/2ab7db9e-5d14-431f-a3a3-a2da3d1047b2" />
-					</valueReference>
-				</input>
-			</Task>
-		</resource>
-	</entry>
-	<!-- two complete document bundles follow here. The first one is referenced above as the annotated version. The next one is referenced in the task as the clean version. Currently only one of the documents is present.-->
-	<entry>
+<entry>
 		<fullUrl value="Bundle/bundle-ibrance75-100-125" />
 		<resource>
 			<Bundle>

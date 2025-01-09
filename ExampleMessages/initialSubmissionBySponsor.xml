@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir https://hl7.org/fhir/fhir-single.xsd">
 	<id value="44930798-7856-4dbf-968d-58feb74c3b99" />
+	<identifier> 
+		<system value="urn:example-org:authoringTool.identifiers"/> 
+		<value value="35f23e97-328c-4eb7-8e94-34f478983e89"/> 
+	</identifier>
 	<type value="message" />
 	<entry>
 		<fullUrl value="MessageHeader/31fb0e0a-ca8b-4554-bd4c-0f61004a89fb" />
@@ -10,18 +14,17 @@
 				<eventCoding>
 					<display value="temp-string of VIB Demo Labeling" />
 				</eventCoding>
-				<!-- i4i: are sender and receiver reversed? -->
 				<destination>
 					<receiver>
-						<reference value="Organization/PfizerId" />
+						<reference value="Organization/FDAID" />
 					</receiver>
 				</destination>
 				<sender>
-					<reference value="Organization/FDAID" />
+					<reference value="Organization/PfizerId" />
 				</sender>
 				<source>
 					<name value="VIB Demo" />
-				</source>
+				</source> 
 			</MessageHeader>
 		</resource>
 	</entry>
@@ -51,11 +54,11 @@
 						<code value="fdast1" />
 						<display value="Original Application" />
 					</coding>
-					<!-- i4i: why is this the same as the first <coding>? -->
+					<!-- new code does not exist yet, new workflow to be adopted. -->
 					<coding>
 						<system value="https://www.accessdata.fda.gov/eCTD-temp" />
-						<code value="fdaat1" />
-						<display value="New Drug Application (NDA)" />
+						<code value="fdaat1FAKEcode" />
+						<display value="New Drug Application (NDA) - process start" />
 					</coding>
 					<text value="NDA Labeling Initial Submission from Pharmaceutical agent" />
 				</code>
