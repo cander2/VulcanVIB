@@ -3,7 +3,7 @@
 	<id value="4994c34d-193f-405c-a5c0-e5f7f012ab4a" />
 	<identifier> 
 		<system value="urn:example-org:fda.identifiers"/> 
-		<value value="35f23e97-328c-4eb7-8e94-34f478983e891"/> 
+		<value value="35f23e97-328c-4eb7-8e94-34f478983e8910"/> 
 	</identifier>
 	<type value="message" />
 	<entry>
@@ -42,11 +42,11 @@
 				<id value="c21e0d58-af73-498f-8d93-717caf999048" />
 				<identifier>
 					<system value="http://example.com/system" />
-					<value value="c21e0d58-af73-498f-8d93-717caf999048" />
+					<value value="c21e0d58-af73-498f-8d93-717caf9990480" />
 				</identifier>
 				<groupIdentifier>
 					<system value="http://example.com/system" />
-					<value value="NDA 212436" />
+					<value value="NDA 2124360" />
 				</groupIdentifier>
 				<status value="requested" />
 				<intent value="order" />
@@ -77,7 +77,7 @@
 					<!-- adding identifier means the recipient system does not need to do a look-up just to know the Task identifier -->
 					<identifier>
 						<system value="http://example.com/system" />
-						<value value="bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
+						<value value="bd675726-6ca7-4fce-8edb-6f29c0df2bcc0" />
 					</identifier>
 				</focus>
 				<for>
@@ -101,7 +101,7 @@
 						<!-- adding identifier means the recipient system does not need to do a look-up just to know the Task identifier -->
 						<identifier>
 							<system value="http://example.com/system" />
-							<value value="bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
+							<value value="bd675726-6ca7-4fce-8edb-6f29c0df2bcc0" />
 						</identifier>
 					</reference>
 				</reason>
