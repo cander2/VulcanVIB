@@ -28,7 +28,7 @@
 				<response> 
 					<identifier> 
 						<system value="urn:example-org:fda.identifiers"/> 
-						<value value="35f23e97-328c-4eb7-8e94-34f478983e893"/> 
+						<value value="35f23e97-328c-4eb7-8e94-34f478983e8930"/> 
 					</identifier>
 				  <code value="ok"/> 
 				</response> 
@@ -42,11 +42,11 @@
 				<id value="f5a1cd71-86a1-400b-b200-bcbd68cb7237" />
 				<identifier>
 					<system value="http://example.com/system" />
-					<value value="f5a1cd71-86a1-400b-b200-bcbd68cb7237" />
+					<value value="f5a1cd71-86a1-400b-b200-bcbd68cb72370" />
 				</identifier>
 				<groupIdentifier>
 					<system value="http://example.com/system" />
-					<value value="NDA 212436" />
+					<value value="NDA 2124360" />
 				</groupIdentifier>
 				<status value="requested" />
 				<intent value="order" />
@@ -76,7 +76,7 @@
 					<!-- adding identifier means the recipient system does not need to do a look-up just to know the Task identifier -->
 					<identifier>
 						<system value="http://example.com/system" />
-						<value value="bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
+						<value value="bd675726-6ca7-4fce-8edb-6f29c0df2bcc0" />
 					</identifier>
 				</focus>
 				<for>
@@ -101,7 +101,7 @@
 						<!-- identifier is a useful shortcut for navigating the chain of Task instances and identification -->
 						<identifier>
 							<system value="http://example.com/system" />
-							<value value="6751b6c0-385e-472e-bdf8-7350dfffb388" />
+							<value value="6751b6c0-385e-472e-bdf8-7350dfffb3880" />
 						</identifier>
 					</reference>
 				</reason>

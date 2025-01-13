@@ -35,11 +35,11 @@
 				<id value="bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
 				<identifier>
 					<system value="http://example.com/system" />
-					<value value="bd675726-6ca7-4fce-8edb-6f29c0df2bcc" />
+					<value value="bd675726-6ca7-4fce-8edb-6f29c0df2bcc0" />
 				</identifier>
 				<groupIdentifier>
 					<system value="http://example.com/system" />
-					<value value="NDA 212436" />
+					<value value="NDA 2124360" />
 				</groupIdentifier>
 				<status value="requested" />
 				<intent value="order" />
