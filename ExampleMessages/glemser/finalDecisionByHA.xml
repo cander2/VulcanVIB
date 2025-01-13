@@ -138,7 +138,7 @@
 				</identifier>
 				<type value="document" />
 				<timestamp value="2022-09-08T00:00:00Z" />
-				<entry>
+			<entry>
 					<fullUrl value="Composition/compositionusen"/>
 					<resource>
 						<Composition>
@@ -686,12 +686,7 @@
 										<div style="narrative">
 											<p>125 mg capsules: opaque, hard gelatin capsules, size 0, with caramel cap and body,
                                     printed with white ink "Pfizer" on the cap, "PBC 125" on the body.</p>
-											<p>
-												<a id="del01" class="DeleteStart"/>100 mg capsules: opaque,
-                                        hard gelatin capsules, size 1, with caramel cap and light
-                                        orange body, printed with white ink "Pfizer" on the cap, "PBC 100" on the
-                                        body.<a href="#del01" class="DeleteEnd"/>
-											</p>
+
 											<p>75 mg capsules: opaque, hard gelatin capsules, size 2, with light orange cap and
                                     body, printed with white ink "Pfizer" on the cap, "PBC 75" on the body.</p>
 										</div>
@@ -5754,12 +5749,7 @@
 									</code>
 									<status value="additional"/>
 									<div class="comments" xmlns="http://www.w3.org/1999/xhtml"/>
-									<div class="trackChanges" xmlns="http://www.w3.org/1999/xhtml">
-										<div class="Delete" title="del01">
-											<span class="Author" title="Pfizer"/>
-											<span class="Date" title="2024-11-25T10:00:00Z"/>
-										</div>
-									</div>
+									<div class="trackChanges" xmlns="http://www.w3.org/1999/xhtml"/>
 								</text>
 							</section>
 						</Composition>
