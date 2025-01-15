@@ -5711,18 +5711,20 @@
 								</text>
 							</section>
 							<section id="eceba63e-59e8-49b9-bd20-510df0c31795">
+								<title value="Annotations"/>
+								<code>
+									<coding>
+										<system value="http://loinc.org"/>
+										<code value="42229-5"/>
+										<display value="SPL UNCLASSIFIED SECTION"/>
+									</coding>
+								</code>
 								<text>
-									<title value="Annotations"/>
-									<code>
-										<coding>
-											<system value="http://loinc.org"/>
-											<code value="42229-5"/>
-											<display value="SPL UNCLASSIFIED SECTION"/>
-										</coding>
-									</code>
-									<status value="additional"/>
-									<div class="comments" xmlns="http://www.w3.org/1999/xhtml"/>
-									<div class="trackChanges" xmlns="http://www.w3.org/1999/xhtml"/>
+									<status value="additional" />
+									<div xmlns="http://www.w3.org/1999/xhtml">
+										<div class="comments" />
+										<div class="trackChanges" />
+									</div>
 								</text>
 							</section>
 						</Composition>
@@ -6337,9 +6339,9 @@
 								</code>
 								<strength>
 									<presentationQuantity>
-										<system value="http://unitsofmeasure.org"/>
 										<value value="75"/>
 										<unit value="mg"/>
+										<system value="http://unitsofmeasure.org"/>
 										<code value="mg"/>
 									</presentationQuantity>
 								</strength>
@@ -6375,7 +6377,6 @@
 									<display value="Kinase Inhibitor"/>
 								</coding>
 							</group>
-							<description value="PALBOCICLIB 100mg"/>
 							<allergenicIndicator value="false"/>
 							<substance>
 								<code>
@@ -6385,9 +6386,9 @@
 								</code>
 								<strength>
 									<presentationQuantity>
-										<system value="http://unitsofmeasure.org"/>
 										<value value="100"/>
 										<unit value="mg"/>
+										<system value="http://unitsofmeasure.org"/>
 										<code value="mg"/>
 									</presentationQuantity>
 								</strength>
@@ -6423,7 +6424,6 @@
 									<display value="Kinase Inhibitor"/>
 								</coding>
 							</group>
-							<description value="PALBOCICLIB 125mg"/>
 							<allergenicIndicator value="false"/>
 							<substance>
 								<code>
@@ -6433,9 +6433,9 @@
 								</code>
 								<strength>
 									<presentationQuantity>
-										<system value="http://unitsofmeasure.org"/>
 										<value value="125"/>
 										<unit value="mg"/>
+										<system value="http://unitsofmeasure.org"/>
 										<code value="mg"/>
 									</presentationQuantity>
 								</strength>
@@ -6476,10 +6476,8 @@
 						<Ingredient>
 							<id value="SILICON-DIOXIDE"/>
 							<identifier>
-								<coding>
 									<system value="http://fdasis.nlm.nih.gov"/>
 									<value value="ETJ7Z6XBU4"/>
-								</coding>
 							</identifier>
 							<status value="active"/>
 							<for>
@@ -6519,10 +6517,8 @@
 						<Ingredient>
 							<id value="SUCCINIC-ACID"/>
 							<identifier>
-								<coding>
 									<system value="http://fdasis.nlm.nih.gov"/>
 									<value value="AB6MNQ6J6L"/>
-								</coding>
 							</identifier>
 							<status value="active"/>
 							<for>
@@ -6648,10 +6644,8 @@
 						<ManufacturedItemDefinition>
 							<id value="MID-PALBOCICLIB100"/>
 							<identifier>
-								<coding>
 									<system value="http://hl7.org/fhir/sid/ndc"/>
 									<value value="0069-0188"/>
-								</coding>
 							</identifier>
 							<manufacturedDoseForm>
 								<coding>
@@ -6737,10 +6731,8 @@
 						<ManufacturedItemDefinition>
 							<id value="MID-PALBOCICLIB125"/>
 							<identifier>
-								<coding>
 									<system value="http://hl7.org/fhir/sid/ndc"/>
 									<value value="0069-0189"/>
-								</coding>
 							</identifier>
 							<manufacturedDoseForm>
 								<coding>
@@ -6913,7 +6905,7 @@
 										</coding>
 									</type>
 								</part>
-								<countryLanguage>
+								<usage>
 									<country>
 										<coding>
 											<system value="urn:iso:std:iso:3166"/>
@@ -6928,7 +6920,7 @@
 											<display value="English"/>
 										</coding>
 									</language>
-								</countryLanguage>
+								</usage>
 							</name>
 							<operation>
 								<type>
@@ -7099,7 +7091,7 @@
 										</coding>
 									</type>
 								</part>
-								<countryLanguage>
+								<usage>
 									<country>
 										<coding>
 											<system value="urn:iso:std:iso:3166"/>
@@ -7114,7 +7106,7 @@
 											<display value="English"/>
 										</coding>
 									</language>
-								</countryLanguage>
+								</usage>
 							</name>
 							<operation>
 								<type>
@@ -7199,10 +7191,8 @@
 						<MedicinalProductDefinition>
 							<id value="MPDPALBOCICLIB125"/>
 							<identifier>
-								<coding>
 									<system value="http://hl7.org/fhir/sid/ndc"/>
 									<value value="0069-0189"/>
-								</coding>
 							</identifier>
 							<route>
 								<coding>
@@ -7287,7 +7277,7 @@
 										</coding>
 									</type>
 								</part>
-								<countryLanguage>
+								<usage>
 									<country>
 										<coding>
 											<system value="urn:iso:std:iso:3166"/>
@@ -7302,7 +7292,7 @@
 											<display value="English"/>
 										</coding>
 									</language>
-								</countryLanguage>
+								</usage>
 							</name>
 							<operation>
 								<type>
@@ -7387,14 +7377,9 @@
 						<AdministrableProductDefinition xmlns="http://hl7.org/fhir">
 							<id value="APD-PALBOCICLIB75"/>
 							<identifier>
-								<coding>
 									<system value="http://hl7.org/fhir/sid/ndc"/>
 									<value value="0069-0187"/>
-								</coding>
 							</identifier>
-							<subject>
-								<reference value="ManufacturedItemDefinition/MID-PALBOCICLIB75"/>
-							</subject>
 							<administrableDoseForm>
 								<coding>
 									<system value="http://ncit.nci.nih.gov"/>
@@ -7503,14 +7488,9 @@
 						<AdministrableProductDefinition xmlns="http://hl7.org/fhir">
 							<id value="APD-PALBOCICLIB100"/>
 							<identifier>
-								<coding>
 									<system value="http://hl7.org/fhir/sid/ndc"/>
 									<value value="0069-0188"/>
-								</coding>
 							</identifier>
-							<subject>
-								<reference value="ManufacturedItemDefinition/MID-PALBOCICLIB100"/>
-							</subject>
 							<administrableDoseForm>
 								<coding>
 									<system value="http://ncit.nci.nih.gov"/>
@@ -7620,14 +7600,9 @@
 						<AdministrableProductDefinition xmlns="http://hl7.org/fhir">
 							<id value="APD-PALBOCICLIB125"/>
 							<identifier>
-								<coding>
 									<system value="http://hl7.org/fhir/sid/ndc"/>
 									<value value="0069-0189"/>
-								</coding>
 							</identifier>
-							<subject>
-								<reference value="ManufacturedItemDefinition/MID-PALBOCICLIB125"/>
-							</subject>
 							<administrableDoseForm>
 								<coding>
 									<system value="http://ncit.nci.nih.gov"/>
@@ -7766,15 +7741,15 @@
 							<description value="NDC 0069-0187-21
 
                 Pfizer
-                
+
                 Ibrance®
                 (palbociclib)
                 capsules
-                
+
                 75 mg
-                
+
                 21 Capsules
-                
+
                 Rx only"/>
 							<manufacturer>
 								<reference value="Organization/985052076"/>
@@ -7799,12 +7774,6 @@
 								</type>
 								<quantity value="1"/>
 								<shelfLifeStorage>
-									<periodQuantity>
-										<value value="48"/>
-										<unit value="mo"/>
-										<system value="https://unitsofmeasure.org"/>
-										<code value="mo"/>
-									</periodQuantity>
 									<specialPrecautionsForStorage>
 										<coding>
 											<system value="http://ncit.nci.nih.gov"/>
@@ -7831,7 +7800,9 @@
 								</property>
 								<containedItem>
 									<item>
+										<reference>
 										<reference value="ManufacturedItemDefinition/MID-PALBOCICLIB75"/>
+										</reference>
 									</item>
 									<amount>
 										<value value="21"/>
@@ -7878,13 +7849,13 @@
 							<description value="NDC 0069-0188-21
 
                 Pfizer
-                
+
                 Ibrance®
                 (palbociclib)
                 capsules
-                
+
                 100 mg
-                
+
                 21 Capsules"/>
 							<manufacturer>
 								<reference value="Organization/618054084"/>
@@ -7906,12 +7877,6 @@
 								</type>
 								<quantity value="1"/>
 								<shelfLifeStorage>
-									<periodQuantity>
-										<value value="48"/>
-										<unit value="mo"/>
-										<system value="https://unitsofmeasure.org"/>
-										<code value="mo"/>
-									</periodQuantity>
 									<specialPrecautionsForStorage>
 										<coding>
 											<system value="http://ncit.nci.nih.gov"/>
@@ -7938,7 +7903,9 @@
 								</property>
 								<containedItem>
 									<item>
+									<reference>
 										<reference value="ManufacturedItemDefinition/MID-PALBOCICLIB100"/>
+									</reference>
 									</item>
 									<amount>
 										<value value="21"/>
@@ -7986,15 +7953,15 @@
 							<description value="NDC 0069-0189-21
 
                 Pfizer
-                
+
                 Ibrance®
                 (palbociclib)
                 capsules
-                
+
                 125 mg
-                
+
                 21 Capsules
-                
+
                 Rx only"/>
 							<manufacturer>
 								<reference value="Organization/618054084"/>
@@ -8016,12 +7983,6 @@
 								</type>
 								<quantity value="1"/>
 								<shelfLifeStorage>
-									<periodQuantity>
-										<value value="48"/>
-										<unit value="mo"/>
-										<system value="https://unitsofmeasure.org"/>
-										<code value="mo"/>
-									</periodQuantity>
 									<specialPrecautionsForStorage>
 										<coding>
 											<system value="http://ncit.nci.nih.gov"/>
@@ -8048,7 +8009,9 @@
 								</property>
 								<containedItem>
 									<item>
+										<reference>
 										<reference value="ManufacturedItemDefinition/MID-PALBOCICLIB100"/>
+										</reference>
 									</item>
 									<amount>
 										<value value="21"/>
@@ -8196,152 +8159,6 @@
 					</resource>
 				</entry>
 				<entry>
-					<fullUrl value="ClinicalUseDefinition/1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p"/>
-					<resource>
-						<ClinicalUseDefinition>
-							<id value="1a2b3c4d-5e6f-7g8h-9i0j-1k2l3m4n5o6p"/>
-							<meta>
-								<profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-interaction-uv-epi"/>
-							</meta>
-							<identifier>
-								<use value="official"/>
-								<system value="https://example.com/system"/>
-								<value value="CYP3AInhibitors001"/>
-							</identifier>
-							<type value="interaction"/>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB75"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB100"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB125"/>
-							</subject>
-							<interaction>
-								<interactant>
-									<itemCodeableConcept>
-										<coding>
-											<system value="https://example.com/system"/>
-											<code value="CYP3AInhibitor"/>
-											<display value="CYP3A Inhibitor"/>
-										</coding>
-									</itemCodeableConcept>
-								</interactant>
-							</interaction>
-						</ClinicalUseDefinition>
-					</resource>
-				</entry>
-				<entry>
-					<fullUrl value="ClinicalUseDefinition/2b3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7q"/>
-					<resource>
-						<ClinicalUseDefinition>
-							<id value="2b3c4d5e-6f7g-8h9i-0j1k-2l3m4n5o6p7q"/>
-							<meta>
-								<profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-interaction-uv-epi"/>
-							</meta>
-							<identifier>
-								<use value="official"/>
-								<system value="https://example.com/system"/>
-								<value value="CYP3AInducers002"/>
-							</identifier>
-							<type value="interaction"/>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB75"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB100"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB125"/>
-							</subject>
-							<interaction>
-								<interactant>
-									<itemCodeableConcept>
-										<coding>
-											<system value="https://example.com/system"/>
-											<code value="CYP3AInducer"/>
-											<display value="CYP3A Inducer"/>
-										</coding>
-									</itemCodeableConcept>
-								</interactant>
-							</interaction>
-						</ClinicalUseDefinition>
-					</resource>
-				</entry>
-				<entry>
-					<fullUrl value="ClinicalUseDefinition/3c4d5e6f-7g8h-9i0j-1k2l-3m4n5o6p7q8r"/>
-					<resource>
-						<ClinicalUseDefinition>
-							<id value="3c4d5e6f-7g8h-9i0j-1k2l-3m4n5o6p7q8r"/>
-							<meta>
-								<profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-interaction-uv-epi"/>
-							</meta>
-							<identifier>
-								<use value="official"/>
-								<system value="https://example.com/system"/>
-								<value value="Midazolam003"/>
-							</identifier>
-							<type value="interaction"/>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB75"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB100"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB125"/>
-							</subject>
-							<interaction>
-								<interactant>
-									<itemCodeableConcept>
-										<coding>
-											<system value="https://precision.fda.gov/uniisearch/srs/unii/R60L0SM5BC"/>
-											<code value="R60L0SM5BC"/>
-											<display value="Midazolam"/>
-										</coding>
-									</itemCodeableConcept>
-								</interactant>
-							</interaction>
-						</ClinicalUseDefinition>
-					</resource>
-				</entry>
-				<entry>
-					<fullUrl value="ClinicalUseDefinition/4d5e6f7g-8h9i-0j1k-2l3m-4n5o6p7q8r9s"/>
-					<resource>
-						<ClinicalUseDefinition>
-							<id value="4d5e6f7g-8h9i-0j1k-2l3m-4n5o6p7q8r9s"/>
-							<meta>
-								<profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-indication-uv-epi"/>
-							</meta>
-							<identifier>
-								<use value="official"/>
-								<system value="https://example.com/system"/>
-								<value value="HRHER2NegativeBreastCancer001"/>
-							</identifier>
-							<type value="indication"/>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB75"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB100"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB125"/>
-							</subject>
-							<indication>
-								<code>
-									<coding>
-										<system value="http://snomed.info/sct"/>
-										<code value="444615000"/>
-										<display value="Hormone receptor-positive, HER2-negative advanced or metastatic breast cancer"/>
-									</coding>
-								</code>
-							</indication>
-						</ClinicalUseDefinition>
-					</resource>
-				</entry>
-				<entry>
 					<fullUrl value="ClinicalUseDefinition/6f7g8h9i-0j1k-2l3m-4n5o-6p7q8r9s0t1u"/>
 					<resource>
 						<ClinicalUseDefinition>
@@ -8446,250 +8263,6 @@
 								</code>
 								<description value="Based on findings from animal studies and its mechanism of action, IBRANCE can cause fetal harm when administered to a pregnant woman."/>
 							</warning>
-						</ClinicalUseDefinition>
-					</resource>
-				</entry>
-				<entry>
-					<fullUrl value="ClinicalUseDefinition/1k2l3m4n-5o6p-7q8r-9s0t-1u2v3w4x5y6z"/>
-					<resource>
-						<ClinicalUseDefinition>
-							<id value="1k2l3m4n-5o6p-7q8r-9s0t-1u2v3w4x5y6z"/>
-							<meta>
-								<profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirable-effect-uv-epi"/>
-							</meta>
-							<identifier>
-								<use value="official"/>
-								<system value="https://example.com/system"/>
-								<value value="Anemia003"/>
-							</identifier>
-							<type value="undesirable-effect"/>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB75"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB100"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB125"/>
-							</subject>
-							<undesirableEffect>
-								<classification>
-									<coding>
-										<system value="http://snomed.info/sct"/>
-										<code value="271737000"/>
-										<display value="Anemia"/>
-									</coding>
-								</classification>
-								<frequency value="≥10%"/>
-							</undesirableEffect>
-						</ClinicalUseDefinition>
-					</resource>
-				</entry>
-				<entry>
-					<fullUrl value="ClinicalUseDefinition/2l3m4n5o-6p7q-8r9s-0t1u-2v3w4x5y6z7a"/>
-					<resource>
-						<ClinicalUseDefinition>
-							<id value="2l3m4n5o-6p7q-8r9s-0t1u-2v3w4x5y6z7a"/>
-							<meta>
-								<profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirable-effect-uv-epi"/>
-							</meta>
-							<identifier>
-								<use value="official"/>
-								<system value="https://example.com/system"/>
-								<value value="Thrombocytopenia004"/>
-							</identifier>
-							<type value="undesirable-effect"/>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB75"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB100"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB125"/>
-							</subject>
-							<undesirableEffect>
-								<classification>
-									<coding>
-										<system value="http://snomed.info/sct"/>
-										<code value="302215000"/>
-										<display value="Thrombocytopenia"/>
-									</coding>
-								</classification>
-								<frequency value="≥10%"/>
-							</undesirableEffect>
-						</ClinicalUseDefinition>
-					</resource>
-				</entry>
-				<entry>
-					<fullUrl value="ClinicalUseDefinition/2l3m4n5o-6p7q-8r9s-0t1u-2v3w4x5y6z7a"/>
-					<resource>
-						<ClinicalUseDefinition>
-							<id value="2l3m4n5o-6p7q-8r9s-0t1u-2v3w4x5y6z7a"/>
-							<meta>
-								<profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirable-effect-uv-epi"/>
-							</meta>
-							<identifier>
-								<use value="official"/>
-								<system value="https://example.com/system"/>
-								<value value="Thrombocytopenia004"/>
-							</identifier>
-							<type value="undesirable-effect"/>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB75"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB100"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB125"/>
-							</subject>
-							<undesirableEffect>
-								<classification>
-									<coding>
-										<system value="http://snomed.info/sct"/>
-										<code value="36225005"/>
-										<display value="Blood and lymphatic system disorders"/>
-									</coding>
-								</classification>
-								<symptomConditionEffect>
-									<coding>
-										<system value="http://snomed.info/sct"/>
-										<code value="302215000"/>
-										<display value="Thrombocytopenia"/>
-									</coding>
-								</symptomConditionEffect>
-								<frequency value="≥10%"/>
-							</undesirableEffect>
-						</ClinicalUseDefinition>
-					</resource>
-				</entry>
-				<entry>
-					<fullUrl value="ClinicalUseDefinition/1k2l3m4n-5o6p-7q8r-9s0t-1u2v3w4x5y6z"/>
-					<resource>
-						<ClinicalUseDefinition>
-							<id value="1k2l3m4n-5o6p-7q8r-9s0t-1u2v3w4x5y6z"/>
-							<meta>
-								<profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirable-effect-uv-epi"/>
-							</meta>
-							<identifier>
-								<use value="official"/>
-								<system value="https://example.com/system"/>
-								<value value="Anemia003"/>
-							</identifier>
-							<type value="undesirable-effect"/>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB75"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB100"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB125"/>
-							</subject>
-							<undesirableEffect>
-								<classification>
-									<coding>
-										<system value="http://snomed.info/sct"/>
-										<code value="36225005"/>
-										<display value="Blood and lymphatic system disorders"/>
-									</coding>
-								</classification>
-								<symptomConditionEffect>
-									<coding>
-										<system value="http://snomed.info/sct"/>
-										<code value="271737000"/>
-										<display value="Anemia"/>
-									</coding>
-								</symptomConditionEffect>
-								<frequency value="≥10%"/>
-							</undesirableEffect>
-						</ClinicalUseDefinition>
-					</resource>
-				</entry>
-				<entry>
-					<fullUrl value="ClinicalUseDefinition/0j1k2l3m-4n5o-6p7q-8r9s-0t1u2v3w4x5y"/>
-					<resource>
-						<ClinicalUseDefinition>
-							<id value="0j1k2l3m-4n5o-6p7q-8r9s-0t1u2v3w4x5y"/>
-							<meta>
-								<profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirable-effect-uv-epi"/>
-							</meta>
-							<identifier>
-								<use value="official"/>
-								<system value="https://example.com/system"/>
-								<value value="Leukopenia002"/>
-							</identifier>
-							<type value="undesirable-effect"/>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB75"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB100"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB125"/>
-							</subject>
-							<undesirableEffect>
-								<classification>
-									<coding>
-										<system value="http://snomed.info/sct"/>
-										<code value="36225005"/>
-										<display value="Blood and lymphatic system disorders"/>
-									</coding>
-								</classification>
-								<symptomConditionEffect>
-									<coding>
-										<system value="http://snomed.info/sct"/>
-										<code value="702760002"/>
-										<display value="Leukopenia"/>
-									</coding>
-								</symptomConditionEffect>
-								<frequency value="≥10%"/>
-							</undesirableEffect>
-						</ClinicalUseDefinition>
-					</resource>
-				</entry>
-				<entry>
-					<fullUrl value="ClinicalUseDefinition/9i0j1k2l-3m4n-5o6p-7q8r-9s0t1u2v3w4x"/>
-					<resource>
-						<ClinicalUseDefinition>
-							<id value="9i0j1k2l-3m4n-5o6p-7q8r-9s0t1u2v3w4x"/>
-							<meta>
-								<profile value="http://hl7.org/fhir/uv/emedicinal-product-info/StructureDefinition/ClinicalUseDefinition-undesirable-effect-uv-epi"/>
-							</meta>
-							<identifier>
-								<use value="official"/>
-								<system value="https://example.com/system"/>
-								<value value="Neutropenia001"/>
-							</identifier>
-							<type value="undesirable-effect"/>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB75"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB100"/>
-							</subject>
-							<subject>
-								<reference value="MedicinalProductDefinition/MPDPALBOCICLIB125"/>
-							</subject>
-							<undesirableEffect>
-								<classification>
-									<coding>
-										<system value="http://snomed.info/sct"/>
-										<code value="36225005"/>
-										<display value="Blood and lymphatic system disorders"/>
-									</coding>
-								</classification>
-								<symptomConditionEffect>
-									<coding>
-										<system value="http://snomed.info/sct"/>
-										<code value="703938007"/>
-										<display value="Neutropenia"/>
-									</coding>
-								</symptomConditionEffect>
-								<frequency value="≥10%"/>
-							</undesirableEffect>
 						</ClinicalUseDefinition>
 					</resource>
 				</entry>
